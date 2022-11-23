@@ -9,6 +9,9 @@ El publico objetivo es personas que necesiten inmediatez en resolver todos los r
 
 ========================
 
+Mateo Boutet: Mi nombre es Mateo tengo 22 años, trabajo en una torneria y empece a estudiar programacion 
+por que me gusta mucho todo este mundo y me interesaria trabajar en esto.
+
 Ejemplos de proyectos
 
 https://almundo.com.ar/
