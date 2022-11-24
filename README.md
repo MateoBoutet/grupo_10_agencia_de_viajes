@@ -1,18 +1,20 @@
 # Proyecto Grupal GRUPO 10
 
-Agencia De Viajes: Nos Vamos Volando
+## Agencia De Viajes: Nos Vamos Volando.
 
-Empresa turistica dedicada a la venta de Paquetes de viajes Nacionales e Internacionales
+Empresa turistica dedicada a la venta de Paquetes de viajes Nacionales e Internacionales, los cuales los mismos incluyen vuelos a destino y de regreso , hospedaje, excursiones,alquiler de vehiculo,entre otros.
 
-(los paquetes de viaje incluyen el Destino y todo lo relacionado al mismo...Pasajes de Avion, Hotel, excursiones, movilidad, etc)
-El publico objetivo es personas que necesiten inmediatez en resolver todos los requerimientos al decidir el destino de sus vacaciones
+El publico al cual va dirigida la pagina web es personas que necesiten inmediatez en resolver todos los requerimientos al decidir el destino de sus viajes.
 
-========================
+## Presentación del equipo:
 
-Mateo Boutet: Mi nombre es Mateo tengo 22 años, trabajo en una torneria y empece a estudiar programacion 
+- Mateo Boutet: Mi nombre es Mateo tengo 22 años, trabajo en una torneria y empece a estudiar programacion 
 por que me gusta mucho todo este mundo y me interesaria trabajar en esto.
 
-Ejemplos de proyectos
+- Georgina W. Peña: tengo 34 años, resido en Buenos Aires, Argentina y trabajo como empleada de un banco. Inicie mis estudios principios de este año en el mundo de la programación con objeto de seguir un nuevo camino en lo profesional.
+
+## Referentes del mercado:
+Los referentes en los cuales nos inspiramos en el presente proyecto ,el cual adjuntamos sus URL,fueron seleccionados a partir de los productos que ofrecen, sus funcionalidades y estética. 
 
 https://almundo.com.ar/
 
