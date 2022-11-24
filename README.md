@@ -13,6 +13,8 @@ por que me gusta mucho todo este mundo y me interesaria trabajar en esto.
 
 - Georgina W. Peña: tengo 34 años, resido en Buenos Aires, Argentina y trabajo como empleada de un banco. Inicie mis estudios principios de este año en el mundo de la programación con objeto de seguir un nuevo camino en lo profesional.
 
+- Sebastián A. González: tengo 36 años, vivo en la Ciudad de La Plata, Argentina. Trabajo como comercial-técnico de una multinacional brasilera. Estudié Ingenieria Industrial sin poder temrinar los estudios y este año incursioné en Data Analytics y actualmente estudio Full Stack motivado por un amigo programador con el cual desarrollamos varios proyectos muy interesantes que cambiaron la vida de muchas personas.
+
 ## Referentes del mercado:
 Los referentes en los cuales nos inspiramos en el presente proyecto ,el cual adjuntamos sus URL,fueron seleccionados a partir de los productos que ofrecen, sus funcionalidades y estética. 
 
