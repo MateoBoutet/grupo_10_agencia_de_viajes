@@ -17,6 +17,8 @@ por que me gusta mucho todo este mundo y me interesaria trabajar en esto.
 
 - Sergio Aquino: 35 años, analista funcional con 17 años de experiencia en ámbito informático. Estudiante de Licenciatura en Sistemas, trabajo como coordinador de Sistemas en una empresa de logística radicada en Buenos Aires. Hoy me encuentro sumergido en este nuevo desafío del desarrollo WEB para continuar creciendo en lo profecional.
 
+- Jorge Andres Riaño: 28 años, ingeniero Ambiental. Este año decidí incursionar en el mundo de la programacion ya que me puede complementar mis estudios ambientales y lograr combinar estos dos conocimientos.
+
 ## Referentes del mercado:
 Los referentes en los cuales nos inspiramos en el presente proyecto ,el cual adjuntamos sus URL,fueron seleccionados a partir de los productos que ofrecen, sus funcionalidades y estética. 
 
