@@ -19,6 +19,8 @@ por que me gusta mucho todo este mundo y me interesaria trabajar en esto.
 
 - Jorge Andres Riaño: 28 años, ingeniero Ambiental. Este año decidí incursionar en el mundo de la programacion ya que me puede complementar mis estudios ambientales y lograr combinar estos dos conocimientos.
 
+-  Marcelo Celio: 45 años. Nunca es tarde para aprender se dice...hace poco retorne al mundo de la informatica (nunca me aleje demasiado), y mi objetivo es en lo laboral estar 100% en el rubro. actualmente hago trabajos de IT/redes y por otro lado con una empresa de Flyfishing de US. 
+
 ## Referentes del mercado:
 Los referentes en los cuales nos inspiramos en el presente proyecto ,el cual adjuntamos sus URL,fueron seleccionados a partir de los productos que ofrecen, sus funcionalidades y estética. 
 
