@@ -5,3 +5,10 @@
     margin:0px;
     box-sizing: border-box;
 }
+
+h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #737373;
+
+}
