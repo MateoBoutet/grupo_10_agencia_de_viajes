@@ -12,3 +12,101 @@ h3{
     color: #737373;
 
 }
+
+main{
+    background-color: #ebebeb;
+}
+
+.main{
+    width: 90%;
+    margin: auto;
+}
+
+.destacados, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+} 
+
+.producto{
+    height: 50%;
+    border-bottom: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.producto:hover{
+    filter:drop-shadow(30px 10px 4px #37506C);
+    cursor: pointer;
+}
+
+.imagenes{
+    width: 100%;
+    height: 75%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.articulo{
+    border-top: 3px solid #37506C;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #37506C;
+    background-color: #FE5857;
+    border-radius: 50%;
+    position: absolute;    
+    right: 20px;
+    top: -15px;
+    color: #37506C
+}
+
+.nombres-precios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombres{
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+
+.precios{
+    color: grey;
+}
+
+.precios:hover{
+    filter:drop-shadow(30px 10px 4px #FE5857)
+}
+
+.tarifa{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (min-width: 420px){
+    .producto{
+        width: 45%;
+    }
+
+    .destacados, .ofertas{
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 850px){
+    .producto{
+        width: 22%;
+    }
+}
+
