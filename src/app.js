@@ -14,6 +14,14 @@ app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 });
 
+app.get("/session.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/session.html"))
+});
+
 app.get("/register.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/register.html"))
+});
+
+app.get("/login.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/login.html"))
 });

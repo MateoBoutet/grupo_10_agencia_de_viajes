@@ -1,63 +1,86 @@
+/* Formato de Título */
+
 .registertitle{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
-    margin: 20px 30px 10px;
+    margin: 5% 3%;
     color: #737373;
-    background-color: #f81717;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
 }
+
+/* Formato de Caja contenedoras de items */
 
 .register{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin: 5% 2%;
 }
+
+/* Formato de Caja con 2 items */
 
 .stylearticle{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 50px;
+    align-items: stretch;
+    justify-content:space-evenly;
 }
+
+/* Formato de Item */
 
 .styledate{
     display: flex;
-    flex-direction: column;
-    font-size: 16px;
+    justify-content: space-around;
+    font-size: 12px;
     text-align: center;
-    margin: 1% 20%;
     border-radius: 5px;
 }
+
+.stylecategories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+
+/* Formato de etiquetas */
 
 label{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    margin: 10px 30px;
+    font-size: 12px;
+    margin: 10px 20px;
     color: #737373;
     background-color: #f81717;
     border: none;
+    width: 50%;
 }
 
 input{
     color: #666;
     border: none;
-    padding: 5px;
+    padding: 10px;
 }
+
+/* Button */
 
 .displaybutton{
     display: flex;
     align-items: center;
+    align-self: center;
 }
 
 button{
     color: #737373;
     background-color:  #FE5857;
-    text-align: center;
     border-radius: 5px;
-    border: none;
-    padding: 5px;
-    width: 30%;
-    margin: 20px 50px;
+    padding: 10px;
+    margin: 20px 20px;
     transition-property: background-color;
     transition-duration: 450ms;
 }

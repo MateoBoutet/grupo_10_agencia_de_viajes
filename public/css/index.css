@@ -2,6 +2,10 @@
 
 @import url(register.css);
 
+@import url(session.css);
+
+@import url(login.css);
+
 * {
     padding:0px;
     margin:0px;
