@@ -1,22 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En Nos Vamos Volando las mejores ofertas de paquetes turísticos, alquiler de autos y cruceros. Reserva ahora con el mejor precio y servicio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En Nos Vamos Volando las mejores ofertas de paquetes turísticos, alquiler de autos y cruceros. Reserva ahora con el mejor precio y servicio"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Nos Vamos Volando</title>
     <!-------vinculo hoja de estilo normalize-->
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- Iconos -->
+    <script
+      src="https://kit.fontawesome.com/807c729568.js"
+      crossorigin="anonymous"
+    ></script>
     <!-------vinculo hoja de estilo css-->
-    <link rel= "stylesheet" href="/css/styles.css">
-    <link rel= "stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <!------fuente Poppins google fonts------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,400&family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,400&family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #37506c"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              id="logo"
+              src="/design/logo-nos-vamos-volando.png"
+              width="60"
+              height="60"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Paquetes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vuelos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Alojamiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Traslados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Dropdown</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Encontrá tu destino"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+        <img
+        class="img-navbar"
+        src="/design/jeshoots-com-mSESwdMZr-A-unsplash.jpg"
+        alt="image-airport"
+        width="100%"
+        height="100%"
+      /> 
+    </header>
+    <main>
+        <h2 class="registertitle">Cree su usuario</h2>
+        <form action="register.html" method="post" class="register">
+            <article class="stylearticle">
+            <div class="styledate">
+                <label for="email"></label>
+                <br>
+                <input type='email' name="email" id="email" placeholder="Indique su email" required>
+            </div>
+            <div class="styledate">
+                <label for="foto">Foto de perfil</label>
+                <br>
+                <input type='file' name="foto" id="foto" accept=".jpg" placeholder="Inserte foto de usuari@" required>
+            </div>
+            </article>
+            <article class="stylearticle">
+            <div class="styledate">
+                <label for="nombre"></label>
+                <br>
+                <input type='text' name="nombre" id="nombre" placeholder="Indique su nombre" required>
+            </div>
+            <div class="styledate">
+                <label for="apellido"></label>
+                <br>
+                <input type='text' name="apellido" id="apellido" placeholder="Indique su apellido" required>
+            </div>
+            </article>
+            <article class="stylearticle">
+            <div class="styledate">
+                <label for="fechadenacimiento"> Fecha de nacimiento</label>
+                <br>
+                <input type='date' name="fechadenacimiento" id="fechadenacimiento" placeholder="Indique su fecha de nacimiento" required>
+            </div>
+            </article>
+            <article class="stylearticle">
+            <div class="styledate">
+                <label for="domicilio"></label>
+                <br>
+                <input type='text' name="domicilio" id="domicilio" placeholder="Indique su domicilio" required>
+            </div>
+            <div class="styledate">
+                <label for="ciudad"></label>
+                <br>
+                <input type='text' name="ciudad" id="ciudad" placeholder="Indique su ciudad" required>
+            </div>
+            </article>
+            <article class="stylearticle">
+            <div class="styledate">
+                <label for="provincia"></label>
+                <br>
+                <input type='text' name="provincia" id="provincia" placeholder="Indique su provincia" required>
+            </div>
+            <div class="styledate">
+                <label for="provincia"></label>
+                <br>
+                <input type='text' name="pais" id="pais" placeholder="Indique su pais" required>
+            </div>
+            </article>
+            <article class="stylearticle">
+            <div class="styledate">
+                <label for="categorias">Categorias de Interés</label>
+                <br>
+                    <input type="checkbox" name="categorias">Montañas
+                    <input type="checkbox" name="categorias">Playas
+                    <input type="checkbox" name="categorias">Visitas históricas
+            </article>
+            <article class="stylearticle">
+            <div class="styledate">
+                <label for="password"></label>
+                <br>
+                <input type='password' name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="styledate">
+                <label for="confpassword"></label>
+                <br>
+                <input type='password' name="confpassword" id="confpassword" placeholder="Confirme Password" required>
+            </div>
+            </article>
+            <article class="displaybutton">
+            <button type="reset">Borrar datos</button>
+            <button type="submit">Enviar</button>
+            </article>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>
