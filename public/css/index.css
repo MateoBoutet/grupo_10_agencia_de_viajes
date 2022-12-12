@@ -12,6 +12,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --1: #37506C;
+    --2:#2E9AA1;
+    --3: #FEAF56;
+    --4: #FE5857;
+    --logo: #40CFFF;
+    --hooverbutton: #0000FF;
+}
+
 h3{
     text-align: center;
     font-family: 'Poppins', sans-serif;
