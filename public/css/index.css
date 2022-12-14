@@ -1,5 +1,11 @@
 @import url(normalize.css);
 
+@import url(register.css);
+
+@import url(session.css);
+
+@import url(login.css);
+
 * {
     padding:0px;
     margin:0px;
@@ -85,4 +91,122 @@ p {
     transition-delay: 0s, 0s;
 }
 
+main{
+    background-color: #ebebeb;
+}
 
+.main{
+    width: 90%;
+    margin: auto;
+}
+
+.destacados, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+} 
+
+.producto{
+    max-width: 200px;
+    min-height: 285px;
+    border-bottom: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.producto:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #37506C;
+}
+
+.imagenes{
+    width: 100%;
+    height: 75%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.articulo{
+    border-top: 3px solid #37506C;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #37506C;
+    background-color: #FE5857;
+    border-radius: 50%;
+    position: absolute;    
+    left: 20px;
+    top: -26px;
+    color: #37506C;
+    transition:
+    ease-in transform .8s,
+    ease-in right .8s;
+}
+
+.producto:hover .articulo i{
+transform: translateX(223px) translateY(-190px) /* rotate(360deg) */;
+right: 20px;
+}
+
+
+.nombres-precios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombres{
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+
+.precios{
+    color: grey;
+}
+
+.tarifa{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (min-width: 420px){
+    .producto{
+        width: 45%;
+    }
+
+    .destacados, .ofertas{
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 850px){
+    .producto{
+        max-width: 22%;
+        height: 400px;
+    }
+
+    .imagenes{
+        height: 200px;
+    }
+
+    .precios{
+        padding-top: 35px;
+    }
+
+    .tarifa{
+        padding-top: 35px;
+    }
+
+    .articulo i{
+        top: -15px;
+    }
+}
