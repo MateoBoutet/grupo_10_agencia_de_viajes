@@ -28,6 +28,78 @@ h3{
 
 }
 
+#redes-sociales{
+    background-color: #2b609c;
+    text-align: center;
+    padding: 15px 0 8px;
+}
+
+#redes-sociales i {
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+     margin-right: auto;
+    margin-left:auto;
+}
+
+a{
+    text-decoration: none;
+    color:#fff
+}
+
+
+.list-inline {
+    padding-left:0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+
+
+.footer-logos-container{
+justify-content: space-between;
+padding: 1rem;
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+p {
+    font-size: 0.6em;
+    text-align: center;
+    color: #888;
+}
+
+.nav-item {
+    display: flex;
+    align-items:center;
+}
+
+.nav-link,.nav-link.disabled {
+    color:#fff;
+}
+
+
+@keyframes tamaño{
+    0% { color:red}
+    25% {color:black}
+}
+
+.nav.item{
+    position:relative;
+}
+.fas .fa-headphones-alt:hover{
+    position:absolute;
+    transition: ease-out transform .5s, ease-out left .5s;
+    transition-property: transform, left;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-out, ease-out;
+    transition-delay: 0s, 0s;
+}
+
 main{
     background-color: #ebebeb;
 }
@@ -44,7 +116,8 @@ main{
 } 
 
 .producto{
-    height: 50%;
+    max-width: 200px;
+    min-height: 285px;
     border-bottom: 10px;
     background-color: white;
     margin-bottom: 15px;
@@ -52,8 +125,8 @@ main{
 }
 
 .producto:hover{
-    filter:drop-shadow(30px 10px 4px #37506C);
     cursor: pointer;
+    box-shadow: 0px 0px 15px #37506C;
 }
 
 .imagenes{
@@ -80,10 +153,19 @@ main{
     background-color: #FE5857;
     border-radius: 50%;
     position: absolute;    
-    right: 20px;
-    top: -15px;
-    color: #37506C
+    left: 20px;
+    top: -26px;
+    color: #37506C;
+    transition:
+    ease-in transform .8s,
+    ease-in right .8s;
 }
+
+.producto:hover .articulo i{
+transform: translateX(223px) translateY(-190px) /* rotate(360deg) */;
+right: 20px;
+}
+
 
 .nombres-precios{
     display: flex;
@@ -98,10 +180,6 @@ main{
 
 .precios{
     color: grey;
-}
-
-.precios:hover{
-    filter:drop-shadow(30px 10px 4px #FE5857)
 }
 
 .tarifa{
@@ -121,7 +199,23 @@ main{
 
 @media (min-width: 850px){
     .producto{
-        width: 22%;
+        max-width: 22%;
+        height: 400px;
+    }
+
+    .imagenes{
+        height: 200px;
+    }
+
+    .precios{
+        padding-top: 35px;
+    }
+
+    .tarifa{
+        padding-top: 35px;
+    }
+
+    .articulo i{
+        top: -15px;
     }
 }
-
