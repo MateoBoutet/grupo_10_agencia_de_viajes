@@ -19,6 +19,78 @@ h3{
 
 }
 
+#redes-sociales{
+    background-color: #2b609c;
+    text-align: center;
+    padding: 15px 0 8px;
+}
+
+#redes-sociales i {
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+     margin-right: auto;
+    margin-left:auto;
+}
+
+a{
+    text-decoration: none;
+    color:#fff
+}
+
+
+.list-inline {
+    padding-left:0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+
+
+.footer-logos-container{
+justify-content: space-between;
+padding: 1rem;
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+p {
+    font-size: 0.6em;
+    text-align: center;
+    color: #888;
+}
+
+.nav-item {
+    display: flex;
+    align-items:center;
+}
+
+.nav-link,.nav-link.disabled {
+    color:#fff;
+}
+
+
+@keyframes tamaño{
+    0% { color:red}
+    25% {color:black}
+}
+
+.nav.item{
+    position:relative;
+}
+.fas .fa-headphones-alt:hover{
+    position:absolute;
+    transition: ease-out transform .5s, ease-out left .5s;
+    transition-property: transform, left;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-out, ease-out;
+    transition-delay: 0s, 0s;
+}
+
 main{
     background-color: #ebebeb;
 }
@@ -143,4 +215,3 @@ right: 20px;
         left: 15px;
     }
 }
-
