@@ -1,44 +1,49 @@
-/*Formato Main */
+/* Background Conjunto botones */
 
-main{
-    width: 90%;
+.background-form{
+    width: 80%;
     margin: auto;
+    text-align: center;
 }
 
 /* Formato de Título */
 
 .registertitle{
-    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
-    color: #737373;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    color: rgba(0, 0 , 0, .8);
 }
 
 /* Formato de Caja contenedoras de items */
 
 .register{
-    display: flex;
+    width: 90%;
+/*     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    align-items: center; */
 }
 
 /* Formato de Caja con 2 items */
 
-.stylearticle{
+/* .stylearticle{
     display: flex;
     align-items: stretch;
     justify-content:space-evenly;
-}
+} */
 
 /* Formato de Item */
+
+.styleform{
+    border: 1px rgb(0 0 0 / 12%) solid;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin: 40px 0px;
+}
 
 .styledate{
     display: flex;
     justify-content: space-around;
-    font-size: 12px;
     text-align: center;
+    font-size: 16px;
     border-radius: 5px;
 }
 
@@ -56,33 +61,32 @@ main{
 /* Formato de etiquetas */
 
 label{
-    text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    margin: 10px 20px;
-    color: #737373;
-    border: none;
-    width: 50%;
+    font-size: 18px;
+    margin: 30px 10px;
+    color: rgba(0, 0 , 0, .8);
+    width: 20%;
 }
 
 input{
-    color: #666;
+    display: flex;
+    color: rgb(70, 69, 69);
     border: none;
-    padding: 5px;
+    padding: 10px;
+    width:75%;
 }
 
 /* Button */
 
 .displaybutton{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:stretch ;
+    margin: 20px 30px;
 }
 
 button{
     color: #737373;
     background-color: var(--logo);
+    width: 40%;
+    justify-content: center;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);

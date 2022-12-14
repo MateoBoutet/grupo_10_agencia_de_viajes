@@ -107,31 +107,33 @@
         </div>
       </nav>
     </header>
-    <main>
-        <h2 class="registertitle">Cree su usuario</h2>
+    <main class="background-img">
+      <div class="background-form">
+        <h2 class="registertitle">Mi cuenta</h2>
+        <section class="styleform">
         <form action="register.html" method="post" class="register">
             <article class="stylearticle">
             <div class="styledate">
-                <label for="email"></label>
+                <label for="email">Usuario</label>
                 <br>
                 <input type='email' name="email" id="email" placeholder="Indique su email" required>
             </div>
             </article>
-            <article class="stylearticle">           
+<!--             <article class="stylearticle">           
             <div class="styledate">
                 <label for="foto">Foto de perfil</label>
                 <br>
                 <input type='file' name="foto" id="foto" accept=".jpg" placeholder="Inserte foto de usuari@" required>
             </div>
-            </article>
+            </article> -->
             <article class="stylearticle">
             <div class="styledate">
-                <label for="nombre"></label>
+                <label for="nombre">Nombre</label>
                 <br>
                 <input type='text' name="nombre" id="nombre" placeholder="Indique su nombre" required>
             </div>
             <div class="styledate">
-                <label for="apellido"></label>
+                <label for="apellido">apellido</label>
                 <br>
                 <input type='text' name="apellido" id="apellido" placeholder="Indique su apellido" required>
             </div>
@@ -144,6 +146,13 @@
             </div>
             </article>
             <article class="stylearticle">
+              <div class="styledate">
+                  <label for="telefono">Teléfono</label>
+                  <br>
+                  <input type='tel' name="telefono" id="telefono" placeholder="Indique su número telefónico" required>
+              </div>
+              </article>
+<!--             <article class="stylearticle">
             <div class="styledate">
                 <label for="domicilio"></label>
                 <br>
@@ -166,8 +175,8 @@
                 <br>
                 <input type='text' name="pais" id="pais" placeholder="Indique su pais" required>
             </div>
-            </article>
-            <article class="stylearticle">
+            </article> -->
+<!--             <article class="stylearticle">
             <div class="stylecategories">
                 <label for="categorias">Categorias de Interés</label>
                 <br>
@@ -178,26 +187,28 @@
                     <input type="checkbox" name="categorias">Excursiones
                     <input type="checkbox" name="categorias">Comidas
            
-            </article>
+            </article> -->
             <article class="stylearticle">
             <div class="styledate">
-                <label for="password"></label>
+                <label for="password">Password</label>
                 <br>
                 <input type='password' name="password" id="password" placeholder="Password" required>
             </div>
             </article>
             <article class="stylearticle">
             <div class="styledate">
-                <label for="confpassword"></label>
+                <label for="confpassword">Confirmar Password</label>
                 <br>
                 <input type='password' name="confpassword" id="confpassword" placeholder="Confirme Password" required>
             </div>
             </article>
+          </section>
             <article class="displaybutton">
             <button type="reset">Borrar datos</button>
             <button type="submit">Enviar</button>
             </article>
         </form>
+      </div>
     </main>
     <footer>
 
