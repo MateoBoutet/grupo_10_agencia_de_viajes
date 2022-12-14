@@ -81,7 +81,7 @@ main{
 }
 
 .producto:hover .articulo i{
-transform: translateX(223px) translateY(-190px) /* rotate(360deg) */;
+transform: translateX(525%) translateY(-400%) /* rotate(360deg) */;
 right: 20px;
 }
 
@@ -126,6 +126,10 @@ right: 20px;
         height: 200px;
     }
 
+    .nombres{
+        padding-top: 15px;
+    }
+
     .precios{
         padding-top: 35px;
     }
@@ -136,6 +140,7 @@ right: 20px;
 
     .articulo i{
         top: -15px;
+        left: 15px;
     }
 }
 
