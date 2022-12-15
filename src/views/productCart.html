@@ -115,5 +115,16 @@
             </div>
             <p class="copyright"> &copy;Digital House 2022 | Powered and designed by Group 10 Desarrollo Full Stack </p>
         </footer>
+
+        <script>
+            const webLogo = document.querySelector('#logo')
+            webLogo.addEventListener('click', () => {
+                    if(window){
+                        window.location.href = '/'
+                    }else{  
+                        alert('Ocurrio un error al redirigir.')
+                    }
+            })
+        </script>
     </body>
 </html>
