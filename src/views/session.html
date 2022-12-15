@@ -12,96 +12,55 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Nos Vamos Volando</title>
-    <!-------vinculo hoja de estilo normalize-->
-    <link rel="stylesheet" href="/css/normalize.css" />
     <!-- Iconos -->
     <script
       src="https://kit.fontawesome.com/807c729568.js"
       crossorigin="anonymous"
     ></script>
     <!-------vinculo hoja de estilo css-->
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/session.css" />
     <!------fuente Poppins google fonts------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,400&family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,400&family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+      <!-------icono----------------->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-light"
-        style="background-color: #37506c"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #37506C;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img
-              id="logo"
-              src="/design/logo-nos-vamos-volando.png"
-              width="60"
-              height="60"
-              alt="logo"
-            />
+            <img id="logo" src="/design/logo-nos-vamos-volando.png" width="60" height="60" alt="logo"/>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample04"
-            aria-controls="navbarsExample04"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarsExample04">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Paquetes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vuelos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Alojamiento</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Traslados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="session.html">Iniciar Sesión</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Dropdown</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Paquetes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Vuelos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Alojamiento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Traslados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="session.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-headphones-alt"></i>
+                    <a class="nav-link disabled">Para Ventas <strong>0810 888 810</strong></a>
+                </li>
             </ul>
             <form role="search">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Encontrá tu destino"
-                aria-label="Search"
-              />
+                <input class="form-control" type="search" placeholder="Encontrá tu destino" aria-label="Search" style="width:20rem">
             </form>
           </div>
         </div>
@@ -119,28 +78,49 @@
       </article>
       </div>  
     </main>
+           <!--------------Redes Sociales--------------------->
+    <section class="hidden-xs">
+      <div class="container">
+        <ul class="list-unstyled list-inline">
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <footer>
       <div class="eva-3-row footer-logos-container -eva-3-hide-small -fluid -no-gutter" style="display:flex;"> 
-          <div class="footer-logo-item"> 
-              <img src="/design/descarga4.webp" alt="Iata" title="Iata" class="footer-image-item">
-          </div> 
-          <div class="footer-logo-item"> 
-              <a href="http://www.jus.gov.ar/datos-personales.aspx/" target="_blank" rel="nofollow noopener"> 
-              <img src="/design/descarga3.webp" alt="Pdp" title="Pdp" class="footer-image-item"> 
-              </a> 
-          </div> 
-          <div class="footer-logo-item"> 
-              <a href="http://qr.afip.gob.ar/?qr=7ynzfbEsT3bJi2hL6MRo6w,," target="_blank" rel="nofollow noopener"> 
-                  <img src="/design/descarga.jpeg" alt="Data Fiscal" title="Data Fiscal" class="footer-image-item"> 
-              </a> 
-          </div> 
-          <div class="footer-logo-item"> 
-              <a href="http://servicios.turismo.gob.ar/agencias/constancia/legajo/10680" target="_blank" rel="nofollow noopener"> 
-                  <img src="/design/descarga2.jpeg" alt="Ministerio de Turismo" title="Ministerio de Turismo" class="footer-image-item"> 
-              </a> 
-          </div> 
+        <div class="footer-logo-item"> 
+          <img src="/design/descarga4.webp" alt="Iata" title="Iata" class="footer-image-item">
+        </div> 
+        <div class="footer-logo-item"> 
+          <a href="http://www.jus.gov.ar/datos-personales.aspx/" target="_blank" rel="nofollow noopener"> 
+            <img src="/design/descarga3.webp" alt="Pdp" title="Pdp" class="footer-image-item"> 
+          </a> 
+        </div> 
+        <div class="footer-logo-item"> 
+          <a href="http://qr.afip.gob.ar/?qr=7ynzfbEsT3bJi2hL6MRo6w,," target="_blank" rel="nofollow noopener"> 
+            <img src="/design/descarga.jpeg" alt="Data Fiscal" title="Data Fiscal" class="footer-image-item"> 
+          </a> 
+        </div> 
+        <div class="footer-logo-item"> 
+          <a href="http://servicios.turismo.gob.ar/agencias/constancia/legajo/10680" target="_blank" rel="nofollow noopener"> 
+            <img src="/design/descarga2.jpeg" alt="Ministerio de Turismo" title="Ministerio de Turismo" class="footer-image-item"> 
+          </a> 
+        </div> 
       </div>
-      <p> &copy;Digital House 2022 | Powered and designed by Group 10 Desarrollo Full Stack </p>
+      <p class="copyright"> &copy;Digital House 2022 | Powered and designed by Group 10 Desarrollo Full Stack </p>
   </footer>
   </body>
 </html>
