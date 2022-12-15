@@ -128,6 +128,7 @@ main{
     border-radius: 8px 8px 0px 0px;
 }
 
+
 .articulo{
     border-top: 3px solid #37506C;
     position: relative;
@@ -142,7 +143,7 @@ main{
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 2px solid #37506C;
+    border: 1.5px solid #37506C;
     background-color: #FE5857;
     border-radius: 50%;
     position: absolute;    
