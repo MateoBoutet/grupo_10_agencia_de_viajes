@@ -73,3 +73,12 @@ a{
         color: #888;
     }
     
+
+    .navbar-brand{
+        background-color: white;
+        border-radius: 30px;
+    } 
+
+    #logo{
+        width: 95%;
+    }
