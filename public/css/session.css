@@ -6,21 +6,24 @@
     background-position: center;
 } */
 
-h2{
+
+@import url(styles.css);
+
+h2 {
     text-align: center;
     margin: 20px 0 10px;
 }
 
-.stylesession{
+.stylesession {
     margin-bottom: 380px;
 }
 
-.stylebutton{
+.stylebutton {
     margin: auto;
     text-align: center;
 }
 
-button{
+button {
     color: white;
     background-color: var(--logo);
     border-radius: 5px;
@@ -31,5 +34,6 @@ button{
 }
 
 button:hover{
-    background-color:   var(--hooverbutton);
+    background-color: var(--hooverbutton);
 }
+

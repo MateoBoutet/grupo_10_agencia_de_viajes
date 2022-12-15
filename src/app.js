@@ -25,3 +25,11 @@ app.get("/register.html", (req, res) => {
 app.get("/login.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 });
+
+app.get("/productCart.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
+});
+
+app.get("/productDetail.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/productDetail.html"))
+});

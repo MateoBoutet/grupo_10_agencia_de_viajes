@@ -1,86 +1,22 @@
 @import url(styles.css);
 
-
-:root{
-    --azulMarino: #37506C;
-    --verdoso:#2E9AA1;
-    --amarillo: #FEAF56;
-    -coral: #FE5857;
-    --logo: rgb(64,169,245);
-    --hooverbutton: rgb(12, 122, 201);
-}
-
-h3{
+h3 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #737373;
 
 }
 
-#redes-sociales{
-    background-color: #2b609c;
-    text-align: center;
-    padding: 15px 0 8px;
-}
 
-#redes-sociales i {
-    padding: 0 10px;
-    font-size: 1em;
-}
-
-.container{
-    padding-right: 15px;
-    padding-left: 15px;
-     margin-right: auto;
-    margin-left:auto;
-}
-
-a{
-    text-decoration: none;
-    color:#fff
-}
-
-
-.list-inline {
-    padding-left:0;
-    list-style: none;
-    margin-left: -5px;
-}
-
-
-
-.footer-logos-container{
-justify-content: space-between;
-padding: 1rem;
-margin-left: 2rem;
-margin-right: 2rem;
-}
-
-p {
-    font-size: 0.6em;
-    text-align: center;
-    color: #888;
-}
-
-.nav-item {
-    display: flex;
-    align-items:center;
-}
-
-.nav-link,.nav-link.disabled {
-    color:#fff;
-}
-
-
-@keyframes tamaño{
+@keyframes tamaño {
     0% { color:red}
     25% {color:black}
 }
 
-.nav.item{
+.nav.item {
     position:relative;
 }
-.fas .fa-headphones-alt:hover{
+.fas .fa-headphones-alt:hover {
     position:absolute;
     transition: ease-out transform .5s, ease-out left .5s;
     transition-property: transform, left;
@@ -89,22 +25,22 @@ p {
     transition-delay: 0s, 0s;
 }
 
-main{
+main {
     background-color: #ebebeb;
 }
 
-.main{
+.main {
     width: 90%;
     margin: auto;
 }
 
-.destacados, .ofertas{
+.destacados, .ofertas {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 } 
 
-.producto{
+.producto {
     max-width: 200px;
     min-height: 285px;
     border-bottom: 10px;
@@ -116,20 +52,20 @@ main{
     transition-duration: 1s;
 }
 
-.producto:hover{
+.producto:hover {
     cursor: pointer;
     box-shadow: 0px 0px 15px #37506C;
     background-color: #8bf0ff;
 }
 
-.imagenes{
+.imagenes {
     width: 100%;
     max-height: 75%;
     border-radius: 8px 8px 0px 0px;
 }
 
 
-.articulo{
+.articulo {
     border-top: 3px solid #37506C;
     position: relative;
     display: flex;
@@ -137,7 +73,7 @@ main{
     align-items: center;
 }
 
-.articulo i{
+.articulo i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -155,72 +91,71 @@ main{
     ease-in right .8s;
 }
 
-.producto:hover .articulo i{
+.producto:hover .articulo i {
 transform: translateX(525%) translateY(-425%) /* rotate(360deg) */;
 right: 20px;
 }
 
-
-.nombres-precios{
+.nombres-precios {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.nombres{
+.nombres {
     font-size: 1.2rem;
     line-height: 26px;
 }
 
-.precios{
+.precios {
     color: grey;
 }
 
-.tarifa{
+.tarifa {
     font-size: 16px;
     line-height: 24px;
 }
 
-@media (min-width: 420px){
-    .producto{
+@media (min-width: 420px) {
+    .producto {
         width: 45%;
         height: 250px;
     }
     
-    .destacados, .ofertas{
+    .destacados, .ofertas {
         justify-content: space-between;
     }
 
-    .producto:hover .articulo i{
+    .producto:hover .articulo i {
         transform: translateX(525%) translateY(-425%) /* rotate(360deg) */;
         right: 20px;
         }
 }
 
-@media (min-width: 850px){
+@media (min-width: 850px) {
     .producto{
         max-width: 22%;
         height: 400px;
     }
 
-    .producto:hover .articulo i{
+    .producto:hover .articulo i {
         transform: translateX(675%) translateY(-525%) /* rotate(360deg) */;
         right: 20px;
         }
 
-    .nombres{
+    .nombres {
         padding-top: 15px;
     }
 
-    .precios{
+    .precios {
         padding-top: 35px;
     }
 
-    .tarifa{
+    .tarifa {
         padding-top: 35px;
     }
 
-    .articulo i{
+    .articulo i {
         top: -15px;
         left: 15px;
     }
