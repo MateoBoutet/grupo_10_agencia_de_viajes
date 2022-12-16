@@ -139,9 +139,9 @@ right: 20px;
     }
 
     .producto:hover .articulo i {
-        transform: translateX(675%) translateY(-525%) /* rotate(360deg) */;
+        transform: translateX(750%) translateY(-575%) /* rotate(360deg) */;
         right: 20px;
-        }
+    }
 
     .nombres {
         padding-top: 15px;
