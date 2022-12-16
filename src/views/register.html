@@ -78,7 +78,7 @@
             <div class="styledate">
                 <label for="email">Usuario</label>
                 <br>
-                <input type='email' name="email" id="email" placeholder="Indique su email" required>
+                <input class="styleinput"  type='email' name="email" id="email" placeholder="Indique su email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
             </div>
             </article>
 <!--             <article class="stylearticle">           
@@ -92,26 +92,26 @@
             <div class="styledate">
                 <label for="name">Nombre</label>
                 <br>
-                <input type='text' name="name" id="name" placeholder="Indique su nombre" required>
-            </div>
+                  <input class="styleinput" type='text' name="name" id="name" placeholder="Indique su nombre" maxlength="60" mb-form-field-input="" pattern="[A-Za-z ]+" title="Solo debe poseer letras" required>
+              </div>
             <div class="styledate">
                 <label for="surname">Apellido</label>
                 <br>
-                <input type='text' name="surname" id="surname" placeholder="Indique su apellido" required>
+                <input class="styleinput"  type='text' name="surname" id="surname" placeholder="Indique su apellido" maxlength="60" mb-form-field-input="" pattern="[A-Za-z ]+" title="Solo debe poseer letras" required>
             </div>
             </article>
             <article class="stylearticle">
             <div class="styledate">
                 <label for="birthdate">Fecha de nacimiento</label>
                 <br>
-                <input type='date' name="birthdate" id="birthdate" placeholder="Indique su fecha de nacimiento" required>
+                <input class="styleinput"  type='date' name="birthdate" id="birthdate" placeholder="Indique su fecha de nacimiento" required>
             </div>
             </article>
             <article class="stylearticle">
               <div class="styledate">
                   <label for="phone">Teléfono</label>
                   <br>
-                  <input type='tel' name="phone" id="phone" placeholder="Indique su número telefónico" required>
+                  <input class="styleinput"  type='tel' name="phone" id="phone" placeholder="Indique su número telefónico" pattern="[0-9]{4}+-[0-9]{4}+-[0-9.-]{4}$" required>
               </div>
               </article>
 <!--             <article class="stylearticle">
@@ -154,14 +154,14 @@
             <div class="styledate">
                 <label for="password">Password</label>
                 <br>
-                <input type='password' name="password" id="password" placeholder="Password" required>
+                <input class="styleinput"  type='password' name="password" id="password" placeholder="Password" pattern=".{6,}" title="6 o mas caracteres" required>
             </div>
             </article>
             <article class="stylearticle">
             <div class="styledate">
                 <label for="confpassword">Confirmar Password</label>
                 <br>
-                <input type='password' name="confpassword" id="confpassword" placeholder="Confirme Password" required>
+                <input class="styleinput"  type='password' name="confpassword" id="confpassword" placeholder="Confirme Password" pattern=".{6,}" title="6 o mas caracteres" required>
             </div>
             </article>
           </section>

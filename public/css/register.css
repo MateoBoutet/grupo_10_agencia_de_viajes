@@ -1,5 +1,6 @@
-
 @import url(styles.css);
+
+@import url(session.css);
 
 /* Background Conjunto botones */
 
@@ -14,6 +15,7 @@
 .registertitle{
     font-family: 'Poppins', sans-serif;
     color: rgba(0, 0 , 0, .8);
+    margin-top: 20px;
 }
 
 /* Formato de Caja contenedoras de items */
@@ -28,6 +30,7 @@
 /* Formato de Caja con 2 items */
 
 /* .stylearticle{
+    font-size: 12px;
     display: flex;
     align-items: stretch;
     justify-content:space-evenly;
@@ -37,7 +40,6 @@
 
 .styleform{
     border: 1px rgb(0 0 0 / 12%) solid;
-    box-shadow: 0px 0px 10px var(--logo);
     margin-bottom: 40px;
 }
 
@@ -70,12 +72,25 @@ label{
     width: 35%;
 }
 
-input{
+.styleinput{
     display: flex;
     color: rgb(70, 69, 69);
     border: none;
     padding: 10px;
     width:65%;
+    box-shadow: 0px 0px 00px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    cursor: pointer;
+    transition:all 200ms;
+    position: relative;
+}
+
+.styleinput:hover{
+    border: 5px var(--logo) solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
 }
 
 /* Button */
@@ -84,18 +99,18 @@ input{
     margin: 20px 30px;
 }
 
-button{
-    color: #737373;
+/* button {
+    color: white;
     background-color: var(--logo);
-    width: 40%;
-    justify-content: center;
     border-radius: 5px;
+    justify-content: center;
+    width: 20%;
+    margin: 10px;
     padding: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     transition-property: background-color;
     transition-duration: 450ms;
 }
 
 button:hover{
-    background-color:   var(--hooverbutton);
-}
+    background-color: var(--hooverbutton);
+} */
