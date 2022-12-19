@@ -16,19 +16,15 @@
     <meta name="keywords" content="viajes,vuelos,agencia,viaje,destinos,paquetes,turismo,avion,pasajes,vacaciones"/>
     <!-------vinculo hoja de estilo normalize-->
     <link rel="stylesheet" href="/css/normalize.css" />
-    <!-- Iconos -->
-    <script
-      src="https://kit.fontawesome.com/807c729568.js"
-      crossorigin="anonymous"
-    ></script>
+    <!------------- Iconos -------------->
+    <script src="https://kit.fontawesome.com/807c729568.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <!-------vinculo hoja de estilo css-->
     <link rel="stylesheet" href="/css/register.css" />
     <!------fuente Poppins google fonts------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,400&family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
-    <!-------icono----------------->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -58,9 +54,13 @@
                       <a class="nav-link" href="session.html">Iniciar Sesión</a>
                   </li>
                   <li class="nav-item">
-                      <i class="fas fa-headphones-alt"></i>
-                      <a class="nav-link disabled">Para Ventas <strong>0810 888 810</strong></a>
-                  </li>
+                    <i class="fas fa-headphones-alt"></i>
+                    <a class="nav-link headphones" href="tel:0810 888 810">Para Ventas <strong>0810 888 810</strong></a>
+                </li>
+                  <li class="nav-item carrito" style="display:flex";>
+                    <i class="fas fa-shopping-cart"></i>
+                    <a class="nav-link" href="productCart.html" style="position:absolute"; ></a>
+                </li>
               </ul>
               <form role="search">
                   <input class="form-control" type="search" placeholder="Encontrá tu destino" aria-label="Search" style="width:20rem">
@@ -78,7 +78,7 @@
             <div class="styledate">
                 <label for="email">Usuario</label>
                 <br>
-                <input type='email' name="email" id="email" placeholder="Indique su email" required>
+                <input class="styleinput"  type='email' name="email" id="email" placeholder="Indique su email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
             </div>
             </article>
 <!--             <article class="stylearticle">           
@@ -92,26 +92,26 @@
             <div class="styledate">
                 <label for="name">Nombre</label>
                 <br>
-                <input type='text' name="name" id="name" placeholder="Indique su nombre" required>
-            </div>
+                  <input class="styleinput" type='text' name="name" id="name" placeholder="Indique su nombre" maxlength="60" mb-form-field-input="" pattern="[A-Za-z ]+" title="Solo debe poseer letras" required>
+              </div>
             <div class="styledate">
                 <label for="surname">Apellido</label>
                 <br>
-                <input type='text' name="surname" id="surname" placeholder="Indique su apellido" required>
+                <input class="styleinput"  type='text' name="surname" id="surname" placeholder="Indique su apellido" maxlength="60" mb-form-field-input="" pattern="[A-Za-z ]+" title="Solo debe poseer letras" required>
             </div>
             </article>
             <article class="stylearticle">
             <div class="styledate">
                 <label for="birthdate">Fecha de nacimiento</label>
                 <br>
-                <input type='date' name="birthdate" id="birthdate" placeholder="Indique su fecha de nacimiento" required>
+                <input class="styleinput"  type='date' name="birthdate" id="birthdate" placeholder="Indique su fecha de nacimiento" required>
             </div>
             </article>
             <article class="stylearticle">
               <div class="styledate">
                   <label for="phone">Teléfono</label>
                   <br>
-                  <input type='tel' name="phone" id="phone" placeholder="Indique su número telefónico" required>
+                  <input class="styleinput"  type='tel' name="phone" id="phone" placeholder="Indique su número telefónico" pattern="[0-9]{4}+-[0-9]{4}+-[0-9.-]{4}$" required>
               </div>
               </article>
 <!--             <article class="stylearticle">
@@ -154,14 +154,14 @@
             <div class="styledate">
                 <label for="password">Password</label>
                 <br>
-                <input type='password' name="password" id="password" placeholder="Password" required>
+                <input class="styleinput"  type='password' name="password" id="password" placeholder="Password" pattern=".{6,}" title="6 o mas caracteres" required>
             </div>
             </article>
             <article class="stylearticle">
             <div class="styledate">
                 <label for="confpassword">Confirmar Password</label>
                 <br>
-                <input type='password' name="confpassword" id="confpassword" placeholder="Confirme Password" required>
+                <input class="styleinput"  type='password' name="confpassword" id="confpassword" placeholder="Confirme Password" pattern=".{6,}" title="6 o mas caracteres" required>
             </div>
             </article>
           </section>
