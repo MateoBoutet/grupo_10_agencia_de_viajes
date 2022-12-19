@@ -35,3 +35,8 @@ https://www.turismocity.com.ar/paquetes-turisticos/search
 https://www.airbnb.com.ar/
 
 https://www.booking.com/
+
+
+## Plataforma implementada para organizar el presente trabajo: Trello
+Adjuntamos link:
+https://trello.com/b/XCU9mqEb/proyecto-agencia-de-viajes-nosvamosvolandocom

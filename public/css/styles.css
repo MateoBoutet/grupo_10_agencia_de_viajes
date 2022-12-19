@@ -13,15 +13,17 @@
     --coral: #FE5857;
     --logo: rgb(64,169,245);
     --hooverbutton:  #2b609c;
+    --blanco: #ffff;
+    --gris:#888;
 }
 
 .nav-link,.nav-link.disabled {
-    color:#fff;
+    color: var(--blanco);
 }
 
 a{
     text-decoration: none;
-    color:#fff
+    color: var(--blanco);
 }
 
 .list-inline {
@@ -32,7 +34,7 @@ a{
 
 
 .hidden-xs{
-    background-color: #2b609c;
+    background-color: var(--hooverbutton);
     text-align: center;
     padding: 15px 0 8px;
 }
@@ -51,7 +53,7 @@ a{
 
 a{
     text-decoration: none;
-    color:#fff
+    color: var(--blanco);
 }
 
 
@@ -70,15 +72,29 @@ a{
     .copyright {
         font-size: 0.6em;
         text-align: center;
-        color: #888;
+        color: var(--gris);
     }
     
 
     .navbar-brand{
-        background-color: white;
+        background-color: var(--blanco);
         border-radius: 30px;
     } 
 
     #logo{
         width: 95%;
     }
+
+
+    .fa-headphones-alt, .fa-shopping-cart,.nav-link .headphones {
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--blanco);
+        border-image: initial;
+        border-radius: 65%;
+        color: var(--blanco);
+        padding: 5px;
+
+    }
+
+
