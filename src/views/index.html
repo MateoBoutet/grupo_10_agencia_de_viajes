@@ -17,12 +17,13 @@
     <script src="https://kit.fontawesome.com/807c729568.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <!-------vinculo hoja de estilo css-->
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" type="text/css"/>
     <!------fuente Poppins google fonts------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,400&family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
-</head>
+
+  </head>
 <body>
     <header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #37506C;">
@@ -66,13 +67,15 @@
         </div>
       </nav>
       <div class = "contenedor">
-        <input type="text" placeholder="Encontra tu destino">
-          <div class = "btn">
+        <form action="" class = "search-bar">
+          <input type="text" placeholder="Busca tu destino" name="q">
+          <button type = "submit">
             <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+          </button>
+        </form>
       </div>
-        <img class="img-navbar" src="/design/jeshoots-com-mSESwdMZr-A-unsplash.jpg" alt="image-airport" width="100%" height="100%"/> 
-    </header>
+       <!--  <img class="img-navbar" src="/design/fondo.jpg" alt="image-airport" width="100%" height="100%"/> -->   
+      </header>
     <main>
       <section class = "main">
     <!--------------Titulo Destacados--------------------->
@@ -94,14 +97,14 @@
             alt="Villa Carlos Paz"
             class="imagenes"
           />
-          <section class="articulo">
+           <section class="articulo">
             <i class="fa-solid fa-plane-departure"></i>
             <div class="nombres-precios">
               <h3 class="nombres">Villa Carlos Paz</h3>
               <h2 class="precios">$6700</h2>
               <h4 class="tarifa">Tarifa por persona</h4>
             </div>
-          </section>
+          </section> 
       </article>
       <article class="producto">
           <img
@@ -113,9 +116,11 @@
             <i class="fa-solid fa-plane-departure"></i>
             <div class="nombres-precios">
               <h3 class="nombres">Capilla del Monte</h3>
-              <h2 class="precios">$6700</h2>
+              <div class="tarifa-precios"> 
+                <div class="borde"></div>
               <h4 class="tarifa">Tarifa por persona</h4>
-            </div>
+              <h2 class="precios">$6700</h2>
+              </div>
           </section>
       </article>
       <article class="producto">
