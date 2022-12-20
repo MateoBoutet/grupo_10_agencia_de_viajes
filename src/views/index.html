@@ -25,7 +25,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,400&family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
-</head>
+
+  </head>
 <body>
     <header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #37506C;">
@@ -62,14 +63,22 @@
                     <a class="nav-link" href="productCart.html" style="position:absolute"; ></a>
                 </li>
             </ul>
-            <form role="search">
+          <!--   <form role="search">
                 <input class="form-control" type="search" placeholder="Encontrá tu destino" aria-label="Search" style="width:20rem">
-            </form>
+            </form> -->
           </div>
         </div>
       </nav>
-        <img class="img-navbar" src="/design/jeshoots-com-mSESwdMZr-A-unsplash.jpg" alt="image-airport" width="100%" height="100%"/> 
-    </header>
+      <div class = "contenedor">
+        <form action="" class = "search-bar">
+          <input type="text" placeholder="Busca tu destino" name="q">
+          <button type = "submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+       <!--  <img class="img-navbar" src="/design/fondo.jpg" alt="image-airport" width="100%" height="100%"/> -->   
+      </header>
     <main>
       <section class = "main">
     <!--------------Titulo Destacados--------------------->
@@ -91,7 +100,7 @@
             alt="Villa Carlos Paz"
             class="imagenes"
           />
-          <section class="articulo">
+           <section class="articulo">
             <i class="fa-solid fa-plane-departure"></i>
             <div class="nombres-precios">
               <h3 class="nombres">Villa Carlos Paz</h3>
@@ -124,7 +133,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> 
       </article>
       <article class="producto">
           <img

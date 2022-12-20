@@ -34,6 +34,65 @@ main {
     margin: auto;
 }
 
+.img-navbar{
+    display: flex;
+}
+
+.contenedor{
+    width: 100%;
+    min-height: 100%;
+    padding: 5%;
+    background-image: url(/img/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    backdrop-filter: blur(4px) saturate(100%);
+    border: 1px solid rgb(64,169,245)
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: #000000
+}
+
+.search-bar button i{
+    width: 60%;
+}
+
+.search-bar button{
+    display:block;
+    border: 0;
+    border-radius: 50%;
+    width: min(100vw, 40px);
+    height: min(100vh, 40px);
+    cursor: pointer;
+    background: transparent;
+    transition: .3s;
+}
+
+.search-bar button:hover{
+    background-color: rgba(173, 172, 172, 0.151);
+}
+
 .destacados, .ofertas {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +114,7 @@ main {
 .producto:hover {
     cursor: pointer;
     box-shadow: 0px 0px 15px #37506C;
-    background-color: #8bf0ff;
+    background-color: #8bf0ff25;
 }
 
 .imagenes {
@@ -80,40 +139,54 @@ main {
     width: 30px;
     height: 30px;
     border: 1.5px solid var(--azulMarino);
-    background-color: var(--coral);
+    background-color: var(--logo);
     border-radius: 50%;
     position: absolute;    
     left: 20px;
     top: -26px;
-    color: var(--azulMarino);
-    transition:
-    ease-in transform .8s,
-    ease-in right .8s;
-}
-
-.producto:hover .articulo i {
-transform: translateX(525%) translateY(-425%) /* rotate(360deg) */;
-right: 20px;
-}
-
-.nombres-precios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: var(--blanco);
 }
 
 .nombres {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     font-size: 1.2rem;
     line-height: 26px;
 }
 
+/* .nombres {
+    font-size: 1.2rem;
+    line-height: 26px;
+} */
+
+.borde{
+    border-top: 1px solid gray;
+    position: relative;
+    top: 40px;
+    width: 100%;
+}
+
+.tarifa-precios{
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
 .precios {
     color: var(--gris);
+    width: 100%;
+    position: relative;
+    top: 50px;
+    left: -5px;
 }
 
 .tarifa {
     font-size: 16px;
-    line-height: 24px;
+    width: 100%;
+    position: relative;
+    top: 45px;
+    left: -5px
 }
 
 @media (min-width: 420px) {
@@ -125,11 +198,6 @@ right: 20px;
     .destacados, .ofertas {
         justify-content: space-between;
     }
-
-    .producto:hover .articulo i {
-        transform: translateX(525%) translateY(-425%) /* rotate(360deg) */;
-        right: 20px;
-        }
 }
 
 @media (min-width: 850px) {
@@ -137,23 +205,19 @@ right: 20px;
         max-width: 22%;
         height: 400px;
     }
-
-    .producto:hover .articulo i {
-        transform: translateX(750%) translateY(-575%) /* rotate(360deg) */;
-        right: 20px;
-    }
-
     .nombres {
         padding-top: 15px;
     }
 
     .precios {
-        padding-top: 35px;
+        top: 70px;
+        left: -50px;
     }
 
     .tarifa {
-        padding-top: 35px;
-    }
+        top: 65px;
+        left: -50px
+    } 
 
     .articulo i {
         top: -15px;
