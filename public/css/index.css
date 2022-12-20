@@ -79,13 +79,13 @@ main {
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1.5px solid #37506C;
-    background-color: #FE5857;
+    border: 1.5px solid var(--azulMarino);
+    background-color: var(--coral);
     border-radius: 50%;
     position: absolute;    
     left: 20px;
     top: -26px;
-    color: #37506C;
+    color: var(--azulMarino);
     transition:
     ease-in transform .8s,
     ease-in right .8s;
@@ -108,7 +108,7 @@ right: 20px;
 }
 
 .precios {
-    color: grey;
+    color: var(--gris);
 }
 
 .tarifa {
