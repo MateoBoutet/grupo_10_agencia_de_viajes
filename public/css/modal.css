@@ -1,0 +1,43 @@
+.modal {
+    display: none; /* Ocultamos el modal por defecto */
+    position: fixed; /* Hacemos que el modal sea fijo en la pantalla */
+    z-index: 1; /* Situamos el modal por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho del modal */
+    height: 100%; /* Alto del modal */
+    overflow: auto; /* Hacemos que aparezca un scroll si el contenido del modal es demasiado largo */
+    background-color: rgba(0,0,0,0.4); /* Color de fondo del modal */
+  }
+  
+  .modal-content {
+    background-color: #fefefe; /* Color de fondo del contenido del modal */
+    margin: 30% auto; /* Margen del contenido del modal */
+    padding: 30px; /* Espacio interno del contenido del modal */
+    width: 40%; /* Ancho del contenido del modal */
+  }
+  
+  .button-model {
+    background-color: #2b609c; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 14px 20px; /* Espacio interno del botón */
+    margin: 8px 0; /* Margen del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Muestra una mano al pasar el cursor por encima del botón */
+    width: 80%; /* Ancho del botón */
+    border-radius: 15px; /*Borde curvo*/
+  }
+  
+  .button-model:hover {
+    opacity: 0.8; /* Cambia la opacidad del botón al pasar el cursor por encima */
+    border-radius: 15px; /*Borde curvo*/
+  }
+  
+  .desde{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .hasta{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
