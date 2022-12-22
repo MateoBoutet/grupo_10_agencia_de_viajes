@@ -101,7 +101,7 @@ main {
 
 .producto {
     max-width: 200px;
-    min-height: 285px;
+    height: 30%;
     border-bottom: 10px;
     background-color: white;
     margin: auto;
@@ -163,14 +163,12 @@ main {
 .borde{
     border-top: 1px solid gray;
     position: relative;
-    top: 40px;
     width: 100%;
+    top: 70px;
 }
 
-.tarifa-precios{
-    display: block;
-    align-items: flex-start;
-    justify-content: flex-start;
+.precios-tarifa{
+    width: 45%;
 }
 
 .precios {
@@ -192,7 +190,6 @@ main {
 @media (min-width: 420px) {
     .producto {
         width: 45%;
-        height: 250px;
     }
     
     .destacados, .ofertas {
@@ -203,7 +200,6 @@ main {
 @media (min-width: 850px) {
     .producto{
         max-width: 22%;
-        height: 400px;
     }
     .nombres {
         padding-top: 15px;

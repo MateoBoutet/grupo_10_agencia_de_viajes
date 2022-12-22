@@ -20,12 +20,15 @@
   .button-model {
     background-color: #2b609c; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
-    padding: 14px 20px; /* Espacio interno del botón */
+    padding: 14px 14px; /* Espacio interno del botón */
     margin: 8px 0; /* Margen del botón */
     border: none; /* Sin borde */
     cursor: pointer; /* Muestra una mano al pasar el cursor por encima del botón */
-    width: 80%; /* Ancho del botón */
+    width: 45%; /* Ancho del botón */
     border-radius: 15px; /*Borde curvo*/
+    position: relative;
+    left: 60%;
+    bottom: 15%;
   }
   
   .button-model:hover {
