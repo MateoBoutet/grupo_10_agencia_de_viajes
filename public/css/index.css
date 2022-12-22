@@ -15,6 +15,7 @@ h3 {
 
 .nav.item {
     position:relative;
+
 }
 .fas .fa-headphones-alt:hover {
     position:absolute;
@@ -58,7 +59,7 @@ main {
     align-items: center;
     border-radius: 60px;
     backdrop-filter: blur(4px) saturate(100%);
-    border: 1px solid rgb(64,169,245)
+    border: 1px solid #17395f42
 }
 
 .search-bar input{
@@ -155,11 +156,6 @@ main {
     line-height: 26px;
     width: 100%;
 }
-
-/* .nombres {
-    font-size: 1.2rem;
-    line-height: 26px;
-} */
 
 .borde{
     border-top: 1px solid gray;
