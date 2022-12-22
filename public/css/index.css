@@ -100,8 +100,8 @@ main {
 } 
 
 .producto {
-    max-width: 200px;
-    height: 30%;
+    width: 70%;
+    min-height: 30%;
     border-bottom: 10px;
     background-color: white;
     margin: auto;
@@ -153,6 +153,7 @@ main {
     align-items: center; 
     font-size: 1.2rem;
     line-height: 26px;
+    width: 100%;
 }
 
 /* .nombres {
@@ -164,7 +165,7 @@ main {
     border-top: 1px solid gray;
     position: relative;
     width: 100%;
-    top: 70px;
+    top: 40px;
 }
 
 .precios-tarifa{
@@ -180,7 +181,7 @@ main {
 }
 
 .tarifa {
-    font-size: 16px;
+    font-size: 12px;
     width: 100%;
     position: relative;
     top: 45px;

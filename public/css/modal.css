@@ -24,7 +24,7 @@
     margin: 8px 0; /* Margen del botón */
     border: none; /* Sin borde */
     cursor: pointer; /* Muestra una mano al pasar el cursor por encima del botón */
-    width: 45%; /* Ancho del botón */
+     /* Ancho del botón */
     border-radius: 15px; /*Borde curvo*/
     position: relative;
     left: 60%;
@@ -43,4 +43,16 @@
   .hasta{
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: 420px){
+    .button-model{
+      left: 80%;
+    }
+  }
+
+  @media (min-width: 850px){
+    .button-model{
+      left: 100%;
+    }
   }

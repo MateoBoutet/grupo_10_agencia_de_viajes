@@ -34,7 +34,7 @@ a{
 
 
 .hidden-xs{
-    background-color: var(--hooverbutton);
+    background: linear-gradient(to left, #37506C, rgb(32, 15, 58));
     text-align: center;
     padding: 15px 0 8px;
 }
@@ -95,6 +95,10 @@ a{
         color: var(--blanco);
         padding: 5px;
 
+    }
+
+    .navbar{
+        background: linear-gradient(to left, #37506C, rgb(32, 15, 58))
     }
 
 
