@@ -76,12 +76,12 @@
     
                 <h1>Ingreso</h1>
                 <div class="stylebutton">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario" placeholder="Usuario">
+                    <label for="email">Usuario</label>
+                    <input type="email" name="email" id="email" placeholder="Usuario" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                 </div>
                 <div class="stylebutton">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" placeholder="Contraseña">
+                    <input type="password" id="password" placeholder="Contraseña" pattern=".{6,}" title="6 o mas caracteres" required>
                 </div>
                 <div class="recordarme">
                     <input type="checkbox" name="recordarme" id="recordarme">
