@@ -11,7 +11,7 @@
   }
   
   .modal-content {
-    background-color: #fefefe; /* Color de fondo del contenido del modal */
+    background: linear-gradient(to left, #37506C, rgb(32, 15, 58)); /* Color de fondo del contenido del modal */
     margin: 30% auto; /* Margen del contenido del modal */
     padding: 30px; /* Espacio interno del contenido del modal */
     width: 40%; /* Ancho del contenido del modal */
@@ -39,10 +39,21 @@
   .desde{
     margin-top: 5px;
     margin-bottom: 5px;
+    color: #fff
   }
+
+.desde input, .hasta input{
+  width: 60%;
+  padding: 16px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
   .hasta{
     margin-top: 5px;
     margin-bottom: 5px;
+    color: #fff
   }
 
   @media (min-width: 420px){
