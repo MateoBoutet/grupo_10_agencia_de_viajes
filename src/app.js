@@ -1,35 +1,26 @@
 const express = require('express');
 
 const app =  express ();
-// Modulo nativo para manejar las rutas de los archivos
+
 const path = require('path');
+
+let rutasIndex = require('./routes/index.js');
+let rutasLogin = require('./routes/login.js');
+let rutasRegister = require('./routes/register.js');
+let rutasProductCart = require('./routes/productCart.js');
+let rutasProductDetail = require('./routes/productDetail.js');
+let rutasSession = require('./routes/session.js');
 
 app.use(express.static("./public"));
 
 app.listen(3000,()=>{
-    console.log ('servidor corriendo en el http://localhost:3000"');
+    console.log ('server running in http://localhost:3000"');
 });
 
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/index.html"))
-});
+app.use('/', rutasIndex);
+app.use('/login', rutasLogin);
+app.use('/register', rutasRegister);
+app.use('/productCart', rutasProductCart);
+app.use('/productDetail', rutasProductDetail);
+app.use('/session', rutasSession);
 
-app.get("/session.html", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/session.html"))
-});
-
-app.get("/register.html", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/register.html"))
-});
-
-app.get("/login.html", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/login.html"))
-});
-
-app.get("/productCart.html", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
-});
-
-app.get("/productDetail.html", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productDetail.html"))
-});
