@@ -2,7 +2,7 @@ const path = require('path');
 
 let sessionController = {
     session: (req, res) => {
-        res.sendFile(path.resolve(__dirname, "./../views/session.html"));
+        res.render(path.resolve(__dirname, "./../views/session.ejs"));
 }
 }
 

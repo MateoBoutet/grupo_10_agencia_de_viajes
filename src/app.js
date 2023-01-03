@@ -1,6 +1,8 @@
 const express = require('express');
-
+const morgan = require('morgan');
 const app =  express ();
+
+app.set('view engine', 'ejs');
 
 const path = require('path');
 
@@ -12,6 +14,7 @@ let rutasProductDetail = require('./routes/productDetail.js');
 let rutasSession = require('./routes/session.js');
 
 app.use(express.static("./public"));
+app.use (morgan('dev'));
 
 app.listen(3000,()=>{
     console.log ('server running in http://localhost:3000"');
