@@ -15,8 +15,10 @@ let rutasSession = require('./routes/session.js');
 let rutaFormCarga = require('./routes/formCargaRoute.js')
 let rutaModifProduc = require('./routes/modifProducRoutes.js')
 
+app.use(express.urlencoded({extended:false}));
 app.use(express.static("./public"));
 app.use (morgan('dev'));
+app.use(express.json());
 
 app.listen(3000,()=>{
     console.log ('server running in http://localhost:3000"');
