@@ -9,9 +9,9 @@ const validations = [
     body('name').notEmpty().withMessage('Este campo es obligatorio'),
     body('surname').notEmpty().withMessage('Este campo es obligatorio'),
     body('birthdate').notEmpty().withMessage('Este campo es obligatorio'),
-    body('phone').notEmpty().withMessage('Este campo es obligatorio').bail().isInt().withMessage('debe ingresar sólo números'),
-    body('password').notEmpty().withMessage('Este campo es obligatorio'),
-    body('confpassword').notEmpty().withMessage('Este campo es obligatorio'),
+    body('phone').notEmpty().withMessage('Este campo es obligatorio').bail().isInt().withMessage('debe ingresar sólo numeros'),
+    body('password').notEmpty().withMessage('Este campo es obligatorio').bail().isLength({min:8}).withMessage('la contraseña debe tener al menos 8 caracteres'),
+    body('confpassword').notEmpty().withMessage('Este campo es obligatorio').bail().isLength({min:8}).withMessage('la contraseña debe tener al menos 8 caracteres'),
     body('dni').notEmpty().withMessage('Este campo es obligatorio').bail().isInt().withMessage('debe ingresar sólo números'),
 ]
 

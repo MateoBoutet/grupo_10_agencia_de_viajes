@@ -74,7 +74,7 @@
                 <div class="styledate">
                     <label for="email">Usuario</label>
                     <br>
-                    <input class="styleinput"  type='email' name="email" id="email" placeholder="Indique su email" value="<%= locals.oldData ? oldData.email:null %>">
+                    <input class="styleinput"  type='text' name="email" id="email" placeholder="Indique su email" value="<%= locals.oldData ? oldData.email:null %>">
                     <% if (locals.errors && errors.email){%>
                       <div class="text-danger">
                       <%= errors.email.msg %>
