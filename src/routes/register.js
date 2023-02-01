@@ -1,6 +1,22 @@
 let express = require('express');
 let router = express.Router();
+const path = require('path');
+let multer = require('multer');
 let registerController = require ('../controllers/registerController');
+
+let multerDiskStorage = multer.diskStorage({
+    destination: (req,file,callback) => {
+        let folder = path.join(__dirname, '../../public/img/profileImages');
+        callback(null, folder);
+    },
+    filename:(req,file,callback)=>{
+      let newFileName= Date.now() + path.extname(file.originalname);
+      callback(null,newFileName);  
+    }
+    
+});
+
+const upload = multer ({storage:multerDiskStorage});
 
 const {body} = require('express-validator');
 
@@ -16,6 +32,7 @@ const validations = [
 ]
 
 router.get('/',registerController.register);
-router.post('/',validations,registerController.procesoRegister);
+router.post('/', upload.single('imagenUsuario'), validations, registerController.procesoRegister);
+
 
 module.exports = router;
