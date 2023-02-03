@@ -298,11 +298,5 @@
   "type": "Admin",
   "avatar": "",
   "telefono": "3781183165"
- },
- {
-  "id": 31,
-  "email": "eg87@gmail.com",
-  "password": "1234567888888",
-  "avatar": "default-image.png"
  }
 ]
