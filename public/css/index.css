@@ -110,6 +110,7 @@ main {
     border-radius: 8px;
     transition-property: background-color;
     transition-duration: 1s;
+    margin-top: 5px;
 }
 
 .producto:hover {
