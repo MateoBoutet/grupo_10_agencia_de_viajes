@@ -9,54 +9,102 @@
     <%- include('partials/header.ejs'); -%>
     <main class="background-img">
       <div class="background-form">
-        <h2 class="registertitle">Mi cuenta</h2>
+        <h2 class="registertitle">Crear nueva cuenta</h2>
         <section class="styleform">
-        <form action="/register" method="post" class="register">
-            <article class="stylearticle">
-            <div class="styledate">
-                <label for="email">Usuario</label>
-                <br>
-                <input class="styleinput"  type='email' name="email" id="email" placeholder="Indique su email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
-            </div>
-            </article>
-            <article class="stylearticle">
+        <form action="/register" method="POST" enctype="multipart/form-data" class="register">
+          <legend class="legend">
+            <span>Información Personal</span>
+          </legend>
+          <article class="stylearticle">
             <div class="styledate">
                 <label for="name">Nombre</label>
                 <br>
-                  <input class="styleinput" type='text' name="name" id="name" placeholder="Indique su nombre" maxlength="60" mb-form-field-input="" pattern="[A-Za-z ]+" title="Solo debe poseer letras" required>
-              </div>
-            <div class="styledate">
-                <label for="surname">Apellido</label>
-                <br>
-                <input class="styleinput"  type='text' name="surname" id="surname" placeholder="Indique su apellido" maxlength="60" mb-form-field-input="" pattern="[A-Za-z ]+" title="Solo debe poseer letras" required>
+                <input class="styleinput" type='text' name="name" id="name" placeholder="Indique su nombre" maxlength="40" mb-form-field-input="" value="<%= locals.oldData ? oldData.name:null %>" > 
+                  <% if (locals.errors && errors.name){%>
+                      <div class="text-danger">
+                         <%= errors.name.msg %>
+                      </div>
+                  <%}%>
             </div>
-            </article>
-            <article class="stylearticle">
+            <div class="styledate">
+              <label for="name">Apellido</label>
+              <br>
+              <input class="styleinput" type='text' name="surname" id="surname" placeholder="Ingrese su apellido" maxlength="40" mb-form-field-input="" value="<%= locals.oldData ? oldData.surname:null %>" > 
+                <% if (locals.errors && errors.surname){%>
+              <div class="text-danger">
+                <%= errors.surname.msg %>
+              </div>
+              <%}%>
+          </div> 
             <div class="styledate">
                 <label for="birthdate">Fecha de nacimiento</label>
                 <br>
-                <input class="styleinput"  type='date' name="birthdate" id="birthdate" placeholder="Indique su fecha de nacimiento" required>
+                <input class="styleinput"  type='date' name="birthdate" id="birthdate" placeholder="Indique su fecha de nacimiento"  >
+                <% if (locals.errors && errors.birthdate){%>
+                  <div class="text-danger">
+                    <%= errors.birthdate.msg %>
+                  </div>
+                  <%}%>
             </div>
-            </article>
-            <article class="stylearticle">
+            <div class="styledate">
+                <label for="name">DNI</label>
+                <br>
+                <input class="styleinput" type='text' name="dni" id="dni" placeholder="Ingrese su número DNI" maxlength="10" mb-form-field-input="" value="<%= locals.oldData ? oldData.dni:null %>" > 
+                  <% if (locals.errors && errors.dni){%>
+                <div class="text-danger">
+                  <%= errors.dni.msg %>
+                </div>
+                <%}%>
+            </div>      
               <div class="styledate">
                   <label for="phone">Teléfono</label>
                   <br>
-                  <input class="styleinput"  type='tel' name="phone" id="phone" placeholder="Indique su número telefónico" pattern="[0-9]{4}+-[0-9]{4}+-[0-9.-]{4}$" required>
+                  <input class="styleinput"  type='tel' name="phone" id="phone" placeholder="Indique su número telefónico" value="<%= locals.oldData ? oldData.phone:null %>" >
+                  <% if (locals.errors && errors.phone){%>
+                    <div class="text-danger">
+                      <%= errors.phone.msg %>
+                    </div>
+                  <%}%>
+              </div>
+              <div class="styledate">
+                <label for="imagenUsuario">Imagen de Perfil</label>
+                <br>
+                <input type="file" id= "imagenUsuario" name="imagenUsuario" placeholder="Agregar imagen de perfil"> 
               </div>
               </article>
-            <article class="stylearticle">
+              <legend>
+                <span>Información de Login</span>
+              </legend>
+              <article class="stylearticle">
+                <div class="styledate">
+                    <label for="email">Usuario</label>
+                    <br>
+                    <input class="styleinput"  type='text' name="email" id="email" placeholder="Indique su email" value="<%= locals.oldData ? oldData.email:null %>">
+                    <% if (locals.errors && errors.email){%>
+                      <div class="text-danger">
+                      <%= errors.email.msg %>
+                      </div>
+                  <%}%>
+                </div>
             <div class="styledate">
-                <label for="password">Password</label>
+                <label for="password">Contraseña</label>
                 <br>
-                <input class="styleinput"  type='password' name="password" id="password" placeholder="Contraseña" pattern=".{6,}" title="6 o mas caracteres" required>
+                <input class="styleinput"  type='password' name="password" id="password" placeholder="Contraseña" >
+                <% if (locals.errors && errors.password){%>
+                  <div class="text-danger">
+                    <%= errors.password.msg %>
+                  </div>
+                <%}%>
             </div>
-            </article>
-            <article class="stylearticle">
             <div class="styledate">
-                <label for="confpassword">Confirmar Password</label>
+                <label for="confpassword">Confirmar Contraseña</label>
                 <br>
-                <input class="styleinput"  type='password' name="confpassword" id="confpassword" placeholder="Confirme Contraseña" pattern=".{6,}" title="6 o mas caracteres" required>
+                <input class="styleinput"  type='password' name="confpassword" id="confpassword" placeholder="Confirme Contraseña" >
+                <% if (locals.errors && errors.confpassword){%>
+                  <div class="text-danger">
+                    <%= errors.confpassword.msg %>
+                  </div>
+                <%}%>
             </div>
             </article>
           </section>

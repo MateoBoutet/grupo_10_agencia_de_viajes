@@ -2,6 +2,12 @@
 
 @import url(session.css);
 
+form{
+    width: 90%;
+    margin: 5%;
+
+}
+
 /* Background Conjunto botones */
 
 .background-form{
@@ -31,13 +37,14 @@
     margin-bottom: 40px;
 }
 
-.styledate{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 10px;
+
+legend{
+    border-bottom: 1px solid #c6c6c6;
+    margin:10px;
+    margin-bottom: 17px;
+    padding: 2px;
 }
+
 
 .stylecategories{
     display: flex;
@@ -53,11 +60,12 @@
 /* Formato de etiquetas */
 
 label{
+    display: flex;
     color: rgba(0, 0 , 0, .8);
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    margin: 30px 10px;
-    width: 35%;
+    margin: 21px 0 13px 12px;
+    width: 80%;
 }
 
 .styleinput{
@@ -66,11 +74,13 @@ label{
     border-radius: 20px;
     border: 1px solid #ccc;
     padding: 5px 10px;
-    width:65%;
+    width:100%;
     box-shadow: 0px 0px 00px rgba(0, 0, 0, 0.16);
     cursor: pointer;
     transition:all 200ms;
     position: relative;
+    margin-bottom: 10%;
+    margin-left: 4%;
 }
 
 .styleinput:hover{
@@ -85,4 +95,89 @@ label{
 
 .displaybutton{
     margin: 20px 30px;
+    display:flex;
+}
+
+.displaybutton button {
+    font-size: 14px;
+    color: var(--blanco);
+    border: 2px transparent solid;
+    background-color: var(--logo);
+    border-radius: 16px;
+    justify-content: center;
+    width: 32%;
+    
+    padding: 15px;
+    
+}
+
+@media (min-width: 420px) {
+    .styledate{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin: 18px 10px;
+        width: 42%;
+        font-size: 86%;
+    }
+
+    .styleinput{
+    
+        padding: 2%;
+        margin-bottom: 8%;
+    }
+
+    button {
+        border-radius: 50px;
+        width: 45%;
+        padding: 20px;
+    }
+
+    .displaybutton{
+        margin-right: 8%;
+        margin-left: 21%;
+    }
+
+    }
+
+
+
+@media (min-width: 850px) {
+    .styledate{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin: 18px 10px;
+        width: 42%;
+        font-size: 86%;
+    }
+
+    .styleinput{
+    
+        padding: 2%;
+        margin-bottom: 8%;
+    }
+
+    button {
+        border-radius: 50px;
+        width: 45%;
+        padding: 20px;
+    }
+
+    .displaybutton{
+        margin-right: 8%;
+        margin-left: 21%;
+    }
+
+
 }

@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const session = require ('express-session');
 const app =  express ();
 
 app.set('view engine', 'ejs');
@@ -16,8 +17,11 @@ let rutaFormCarga = require('./routes/formCargaRoute.js');
 let rutaModifProduc = require('./routes/modifProducRoutes.js');
 let rutaProductos = require('./routes/productoRoute');
 
+app.use(express.urlencoded({extended:false}));
 app.use(express.static("./public"));
 app.use (morgan('dev'));
+app.use(express.json());
+app.use(session({secret:"secreto!!"}));
 
 app.listen(3000,()=>{
     console.log ('server running in http://localhost:3000"');
