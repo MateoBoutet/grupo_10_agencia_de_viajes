@@ -83,7 +83,7 @@
                     <select name = "type" class="form-select <%=locals.errors && errors.type ? "is-invalid": null %>">
                     <option value=""> selecciona una categoria</option>
                     <% 
-                      let type = ["Administrador","Consumidor"];
+                      let type = ["Cliente","Administrador"];
                     %> 
                     <% for (const unaCategoria of type) { %>
                     <option

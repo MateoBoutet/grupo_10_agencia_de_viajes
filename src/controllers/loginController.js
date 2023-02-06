@@ -1,6 +1,8 @@
 const path = require('path');
 const {validationResult} = require('express-validator');
 
+
+
 let loginController = {
     login: (req, res) => {
         res.render(path.resolve(__dirname, "./../views/login.ejs"));

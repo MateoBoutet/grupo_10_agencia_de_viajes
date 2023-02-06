@@ -5,8 +5,6 @@ const app =  express ();
 
 app.set('view engine', 'ejs');
 
-const path = require('path');
-
 let rutasIndex = require('./routes/index.js');
 let rutasLogin = require('./routes/login.js');
 let rutasRegister = require('./routes/register.js');
@@ -20,7 +18,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.static("./public"));
 app.use (morgan('dev'));
 app.use(express.json());
-app.use(session({secret:"secreto!!"}));
+app.use(session({secret:"secret"}));
 
 app.listen(3000,()=>{
     console.log ('server running in http://localhost:3000"');
