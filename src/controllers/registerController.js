@@ -9,6 +9,10 @@ const bcryptjs = require ('bcryptjs');
 
 let registerController = {
     register: (req, res) => {
+        if (req.session.userLogged) {
+            return res.redirect('/userProfile');
+        }
+        
         res.render(path.resolve(__dirname, "./../views/register.ejs"));
     },
     procesoRegister: (req,res) => {
@@ -26,10 +30,10 @@ let registerController = {
             return res.render (path.resolve(__dirname, "./../views/register.ejs"), {
                 errors: {
                     password: {
-                        msg: "El password debe coincidir con la confirmación"
+                        msg: "El password debe coincidir"
                     },
                     confpassword: {
-                        msg: "El password debe coincidir con la confirmación"
+                        msg: "El password debe coincidir"
                     }
                 },
                 oldData: req.body
