@@ -20,161 +20,37 @@
           </button>
         </form>
       </div>
-      <section class="main">
-        <section class="destacados">
-          <article class="producto">
-            <img src="/img/villa-carlos-paz.jpg" alt="Villa Carlos Paz" class="imagenes"/>
-            <section class="articulo">
-              <i class="fa-solid fa-plane-departure"></i>
-              <div class="nombres-precios">
-                <h3 class="nombres">Villa Carlos<br>Paz</h3>
-                <div class="borde"></div>
-                <div class="precios-tarifa">
-                  <h2 class="precios">$39.631</h2>
-                  <h4 class="tarifa">Tarifa por una persona</h4>
-                </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/villa-carlos-paz.jpg" alt="Imagen del producto"/>
-                    <p>detalle capilla</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar viaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
+      <div class="row title">
+        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12">
+          <hr />
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+          <h3>Destacado</h3>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12">
+          <hr />
+        </div>
+      </div>
+        <section class="main">
+          <section class = "ofertas">
+        <% paquetes.forEach(producto => { %> 
           <article class="producto">
             <img src="/img/capilla.jpg" alt="Capilla del monte" class="imagenes"/>
             <section class="articulo">
               <i class="fa-solid fa-plane-departure"></i>
               <div class="nombres-precios">
-                <h3 class="nombres">Capilla del<br>Monte</h3>
+                <h3 class="nombres"><%= producto.destino %></h3>
                 <div class="borde"></div>
                 <div class="precios-tarifa">
-                  <h2 class="precios">$35407</h2>
-                  <h4 class="tarifa">Tarifa por una persona</h4>
+                  <h2 class="precios"><%= producto.precio %></h2>
+                  <h4 class="tarifa"><%= producto.tarifa %></h4>
                 </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/capilla.jpg" alt="Imagen del producto" />
-                    <p>detalle capilla</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar viaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
-          <article class="producto">
-            <img src="/img/bariloche.jpeg" alt="Villa Carlos Paz" class="imagenes"/>
-            <section class="articulo">
-              <i class="fa-solid fa-plane-departure"></i>
-              <div class="nombres-precios">
-                <h3 class="nombres">San Carlos<br>Bariloche</h3>
-                <div class="borde"></div>
-                <div class="precios-tarifa">
-                  <h2 class="precios">$40000</h2>
-                  <h4 class="tarifa">Tarifa por una persona</h4>
-                </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/bariloche.jpg" alt="Imagen del producto" />
-                    <p>detalle bariloche</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar viaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
-          <article class="producto">
-            <img src="/img/cataratas.jpg" alt="Cataratas del iguazu" class="imagenes"/>
-            <section class="articulo">
-              <i class="fa-solid fa-plane-departure"></i>
-              <div class="nombres-precios">
-                <h3 class="nombres">Cataratas del<br>Iguazu</h3>
-                <div class="borde"></div>
-                <div class="precios-tarifa">
-                  <h2 class="precios">$37000</h2>
-                  <h4 class="tarifa">Tarifa por una persona</h4>
-                </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/cataratas.jpg" alt="Imagen del producto" />
-                    <p>detalle cataratas</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar viaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
+                <button class="button-model" id="myBtn"></button>
+              </section>
+                </article>
+          <% }) %>
         </section>
+                
         <!--------------Titulo Ofertas--------------------->
         <div class="row title">
           <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12">
@@ -187,177 +63,26 @@
             <hr />
           </div>
         </div>
-        <section class="destacados">
-          <article class="producto">
-            <img src="/img/mardel.jpg" alt="Mar del Plata" class="imagenes" />
-            <section class="articulo">
-              <i class="fa-solid fa-plane-departure"></i>
-              <div class="nombres-precios">
-                <h3 class="nombres">Mar del<br>plata</h3>
-                <div class="borde"></div>
-                <div class="precios-tarifa">
-                  <h2 class="precios">$34700</h2>
-                  <h6 class="tarifa">Tarifa por una persona</h6>
-                </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/mardel.jpg" alt="Imagen del producto" />
-                    <p>detalle mardel</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar viaje</button>
-                    </div>
+        <section class="ofertas">
+          <% paquetes.forEach(producto => { %> 
+            <article class="producto">
+              <img src="/img/capilla.jpg" alt="Capilla del monte" class="imagenes"/>
+              <section class="articulo">
+                <i class="fa-solid fa-plane-departure"></i>
+                <div class="nombres-precios">
+                  <h3 class="nombres"><%= producto.destino %></h3>
+                  <div class="borde"></div>
+                  <div class="precios-tarifa">
+                    <h2 class="precios"><%= producto.precio %></h2>
+                    <h4 class="tarifa"><%= producto.tarifa %></h4>
                   </div>
-                </div>
-              </div>
-            </section>
-          </article>
-          <article class="producto">
-            <img src="/img/mendoza.jpg" alt="Mendoza" class="imagenes" />
-            <section class="articulo">
-              <i class="fa-solid fa-plane-departure"></i>
-              <div class="nombres-precios">
-                <h3 class="nombres">Cerro 7 colores<br>Mendoza</h3>
-                <div class="borde"></div>
-                <div class="precios-tarifa">
-                  <h2 class="precios">$30000</h2>
-                  <h4 class="tarifa">Tarifa por una persona</h4>
-                </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/mendoza.jpg" alt="Imagen del producto" />
-                    <p>detalle mendoza</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar viaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
-          <article class="producto">
-            <img src="/img/merlo.jpg" alt="Merlo" class="imagenes" />
-            <section class="articulo">
-              <i class="fa-solid fa-plane-departure"></i>
-              <div class="nombres-precios">
-                <h3 class="nombres">Merlo<br>San luis</h3>
-                <div class="borde"></div>
-                <div class="precios-tarifa">
-                  <h2 class="precios">$33000</h2>
-                  <h4 class="tarifa">Tarifa por una persona</h4>
-                </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/merlo.jpg" alt="Imagen del producto" />
-                    <p>detalle merlo</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar viaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
-          <article class="producto">
-            <img
-              src="/img/bariloche.jpeg"
-              alt="Villa Carlos Paz"
-              class="imagenes"
-            />
-            <section class="articulo">
-              <i class="fa-solid fa-plane-departure"></i>
-              <div class="nombres-precios">
-                <h3 class="nombres">San Carlos<br>Bariloche</h3>
-                <div class="borde"></div>
-                <div class="precios-tarifa">
-                  <h2 class="precios">$40000</h2>
-                  <h4 class="tarifa">Tarifa por una persona</h4>
-                </div>
-                <button class="button-model" id="myBtn">Detalle</button>
-                <!-------------Modal-->
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="/img/bariloche.jpg" alt="Imagen del producto" />
-                    <p>detalle Bariloche</p>
-                    <div class="desde-hasta">
-                      <div class="desde">
-                        <label for="desde">Desde:</label>
-                        <div>
-                          <input type="date" id="desde" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <div class="hasta">
-                        <label for="hasta">Hasta:</label>
-                        <div>
-                          <input type="date" id="hasta" value="fecha_actual" />
-                        </div>
-                      </div>
-                      <button class="button-model">Agregar Viaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
+                  <button class="button-model" id="myBtn"></button>
+                </section>
+                  </article>
+            <% }) %>
         </section>
-      </section>
+        </section> 
     </main>
     <%- include('partials/footer.ejs'); -%>
-
-    <!--     <script>
-      const webLogo = document.querySelector('#logo')
-      webLogo.addEventListener('click', () => {
-              if(window){
-                  window.location.href = '/'
-              }else{  
-                  alert('Ocurrio un error al redirigir.')
-              }
-      })
-  </script> -->
   </body>
 </html>

@@ -33,7 +33,7 @@ main {
 .main {
     width: 90%;
     margin: auto;
-}
+} 
 
 .img-navbar{
     display: flex;
@@ -98,11 +98,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-} 
+}  
 
 .producto {
     width: 70%;
-    min-height: 30%;
     border-bottom: 10px;
     background-color: white;
     margin: auto;
@@ -167,23 +166,20 @@ main {
 
 .precios-tarifa{
     width: 45%;
-}
-
-.precios {
-    color: var(--gris);
-    width: 100%;
     position: relative;
     top: 50px;
     left: -5px;
 }
 
+.precios {
+    color: var(--gris);
+    width: 100%;
+}
+
 .tarifa {
     font-size: 12px;
     width: 100%;
-    position: relative;
-    top: 45px;
-    left: -5px
-}
+} 
 
 @media (min-width: 420px) {
     .producto {
@@ -206,7 +202,7 @@ main {
     .precios {
         top: 70px;
         left: -50px;
-    }
+    } 
 
     .tarifa {
         top: 65px;

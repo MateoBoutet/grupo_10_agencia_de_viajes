@@ -29,6 +29,7 @@
     position: relative;
     left: 60%;
     bottom: 15%;
+    visibility: hidden;
   }
   
   .button-model:hover {
