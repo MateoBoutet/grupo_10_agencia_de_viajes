@@ -69,6 +69,7 @@ label{
 }
 
 .styleinput{
+    margin: 2px;
     display: flex;
     color: rgb(70, 69, 69);
     border-radius: 20px;
@@ -80,7 +81,7 @@ label{
     transition:all 200ms;
     position: relative;
     margin-bottom: 10%;
-    margin-left: 4%;
+    margin-left: 0%;
 }
 
 .styleinput:hover{
@@ -111,6 +112,11 @@ label{
     
 }
 
+#imagenUsuario {
+    width: 100%;
+}
+
+
 @media (min-width: 420px) {
     .styledate{
         display: flex;
@@ -127,7 +133,6 @@ label{
     }
 
     .styleinput{
-    
         padding: 2%;
         margin-bottom: 8%;
     }
@@ -143,8 +148,11 @@ label{
         margin-left: 21%;
     }
 
+    #imagenUsuario {
+        margin-top: 1rem;
     }
 
+    }
 
 
 @media (min-width: 850px) {
@@ -179,5 +187,9 @@ label{
         margin-left: 21%;
     }
 
+
+    #imagenUsuario {
+        margin-top:1rem;
+    }
 
 }

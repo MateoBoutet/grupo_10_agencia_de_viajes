@@ -6,22 +6,20 @@ const app =  express ();
 
 app.set('view engine', 'ejs');
 
-const path = require('path');
-
 let rutasIndex = require('./routes/index.js');
 let rutasLogin = require('./routes/login.js');
 let rutasRegister = require('./routes/register.js');
 let rutasProductCart = require('./routes/productCart.js');
 let rutasProductDetail = require('./routes/productDetail.js');
 let rutasSession = require('./routes/session.js');
-let productoRoute = require('./routes/productoRoute'); 
+let rutaFormCarga = require('./routes/formCargaRoute.js')
+let rutaModifProduc = require('./routes/modifProducRoutes.js')
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.static("./public"));
 app.use (morgan('dev'));
 app.use(express.json());
 app.use(session({secret:"secreto!!"}));
-app.use(methodOverride('_method'));
 
 app.listen(3000,()=>{
     console.log ('server running in http://localhost:3000"');
@@ -33,4 +31,5 @@ app.use('/register', rutasRegister);
 app.use('/productCart', rutasProductCart);
 app.use('/productDetail', rutasProductDetail);
 app.use('/session', rutasSession);
-app.use('/paquetes', productoRoute);
+app.use('/formCarga', rutaFormCarga)
+app.use('/modifProducto', rutaModifProduc)

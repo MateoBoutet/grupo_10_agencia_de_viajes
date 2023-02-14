@@ -27,7 +27,7 @@
                   <%}%>
             </div>
             <div class="styledate">
-              <label for="name">Apellido</label>
+              <label for="surname">Apellido</label>
               <br>
               <input class="styleinput" type='text' name="surname" id="surname" placeholder="Ingrese su apellido" maxlength="40" mb-form-field-input="" value="<%= locals.oldData ? oldData.surname:null %>" > 
                 <% if (locals.errors && errors.surname){%>
@@ -47,7 +47,7 @@
                   <%}%>
             </div>
             <div class="styledate">
-                <label for="name">DNI</label>
+                <label for="dni">DNI</label>
                 <br>
                 <input class="styleinput" type='text' name="dni" id="dni" placeholder="Ingrese su número DNI" maxlength="10" mb-form-field-input="" value="<%= locals.oldData ? oldData.dni:null %>" > 
                   <% if (locals.errors && errors.dni){%>
@@ -69,8 +69,35 @@
               <div class="styledate">
                 <label for="imagenUsuario">Imagen de Perfil</label>
                 <br>
-                <input type="file" id= "imagenUsuario" name="imagenUsuario" placeholder="Agregar imagen de perfil"> 
+                <input type="file" id= "imagenUsuario" name="imagenUsuario" placeholder="Agregar imagen de perfil" class ="styleinput
+                <%= locals.errors && errors.imagenUsuario ? "is-invalid": null %>"
+                > 
+                <% if (locals.errors && errors.imagenUsuario) { %>
+                <div class = "text-danger">
+                  <%= errors.imagenUsuario.msg %>
+                </div>
+              <% } %>
               </div>
+                  <div class="styledate">
+                    <label>Categoria:</label>
+                    <select name = "type" class="form-select <%=locals.errors && errors.type ? "is-invalid": null %>">
+                    <option value=""> selecciona una categoria</option>
+                    <% 
+                      let type = ["Cliente","Administrador"];
+                    %> 
+                    <% for (const unaCategoria of type) { %>
+                    <option
+                      value="<%= unaCategoria %>"
+                      <%= locals.oldData && (unaCategoria === oldData.type) ? 'selected' : "" %>
+                      ><%=unaCategoria %></option>
+                     <% } %> 
+                    </select>
+                    <% if (locals.errors && errors.type) {%>
+                      <div class="text-danger">
+                        <%= errors.type.msg %>
+                      </div>
+                    <%}%>
+                  </div>
               </article>
               <legend>
                 <span>Información de Login</span>
