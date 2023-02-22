@@ -3,22 +3,24 @@
     <head>
         <%- include('partials/head.ejs'); -%>
         <!-------vinculo hoja de estilo css-->
+        <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/productDetail.css" />
     </head>
     <body>
         <%- include('partials/header.ejs'); -%>
         <!-------main------------->
-        <main></main>
+        <main>
+            <main>
+                <div class="product">
+                  <img src="imagen-del-producto.jpg" alt="Nombre del producto">
+                  <h2>Nombre del producto</h2>
+                  <p>Descripción del producto</p>
+                  <h3>Precio: $XX</h3>
+                  <button>Agregar al carrito</button>
+                </div>
+              </main>
+            
+        </main>
         <%- include('partials/footer.ejs'); -%>
-<!--     <script>
-        const webLogo = document.querySelector('#logo')
-        webLogo.addEventListener('click', () => {
-                if(window){
-                    window.location.href = '/'
-                }else{  
-                    alert('Ocurrio un error al redirigir.')
-                }
-        })
-    </script> -->
     </body>
 </html>

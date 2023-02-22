@@ -2,7 +2,9 @@ const fs = require('fs');
 const path = require('path');
 
 
-const products = require('../data/products.json');
+const productsFilePath = path.join(__dirname, '../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 
 
 
@@ -12,7 +14,7 @@ let productosController = {
             return servicio.id;
         })
 
-        res.render(path.resolve(__dirname, "./../views/paquetes.ejs"), {servicio: servicioFiltrado});
+        res.render(path.resolve(__dirname, "../views/paquetes.ejs"), {servicio: servicioFiltrado});
     },
 
     create: (req, res) =>{
@@ -44,7 +46,18 @@ let productosController = {
 
     delete: (req, res) => {
         
-    }
+    },
+
+    productDetail: (req, res) => {
+        let id = req.params.id;
+		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+		let productoFiltrado = products.find(producto => {
+			return producto.id == id
+		})
+
+		res.render("productDetail.ejs", {producto: productoFiltrado})
+}
 }
 
 module.exports = productosController;

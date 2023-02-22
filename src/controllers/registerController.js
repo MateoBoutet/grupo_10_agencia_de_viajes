@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const {validationResult} = require('express-validator');
 const { callbackify } = require('util');
-const User = require('../../models/User');
+const User = require('../data/models/User');
 const usersFilePath = path.join(__dirname,'../../data/users.json');
 const bcryptjs = require ('bcryptjs');
 

@@ -1,7 +1,7 @@
 const path = require('path');
 const {validationResult} = require('express-validator');
-const User = require('../../models/User');
-const usersFilePath = path.join(__dirname,'../../data/users.json');
+const User = require('../data/models/User');
+const usersFilePath = path.join(__dirname,'../data/users.json');
 const bcryptjs = require ('bcryptjs');
 
 let loginController = {

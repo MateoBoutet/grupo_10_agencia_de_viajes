@@ -1,580 +1,302 @@
 [
- 
-  {
-  
-    "id":  1,
-  
-    "firstName":  "Javier",
-  
-    "lastName":  "Vega",
-  
-    "email":  "pcomberbeach0@mediafire.com",
-  
-    "password":  "xq4Aouv",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario2.jpg",
-  
-    "telefono":  "6430200272"
- 
-  },
-   {
-  
-    "id":  2,
-  
-    "firstName":  "Camila",
-  
-    "lastName":  "Vega",
-  
-    "email":  "rrossander1@amazon.co.jp",
-  
-    "password":  "9xapocbWcXQ",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario6.jpg",
-  
-    "telefono":  "6235045824"
- 
-  },
-   {
-  
-    "id":  3,
-  
-    "firstName":  "Carolina",
-  
-    "lastName":  "Diaz",
-  
-    "email":  "mscholar2@webs.com",
-  
-    "password":  "ovyoh1",
-  
-    "type":  "Admin",
-  
-    "avatar":  "",
-  
-    "telefono":  "1984867601"
- 
-  },
-   {
-  
-    "id":  4,
-  
-    "firstName":  "Eduardo",
-  
-    "lastName":  "Perez",
-  
-    "email":  "ecruickshanks3@bravesites.com",
-  
-    "password":  "MFqPr8Yq",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario2.jpg",
-  
-    "telefono":  "8853746238"
- 
-  },
-   {
-  
-    "id":  5,
-  
-    "firstName":  "Rosa",
-  
-    "lastName":  "Abal",
-  
-    "email":  "anarrie4@patch.com",
-  
-    "password":  "A3zUMHoG",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario2.jpg",
-  
-    "telefono":  "3260242104"
- 
-  },
-   {
-  
-    "id":  6,
-  
-    "firstName":  "Dario",
-  
-    "lastName":  "Estevez",
-  
-    "email":  "bcarradice5@telegraph.co.uk",
-  
-    "password":  "lSo89jxFNk",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario3.jpg",
-  
-    "telefono":  "8226537924"
- 
-  },
-   {
-  
-    "id":  7,
-  
-    "firstName":  "Jorge",
-  
-    "lastName":  "Rodriguez",
-  
-    "email":  "lflanigan6@google.es",
-  
-    "password":  "KjSj3nc0hn8c",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario4.jpg",
-  
-    "telefono":  "8847403383"
- 
-  },
-   {
-  
-    "id":  8,
-  
-    "firstName":  "Tatiana",
-  
-    "lastName":  "Gomez",
-  
-    "email":  "hwinstanley7@unicef.org",
-  
-    "password":  "oXahsu",
-  
-    "type":  "Admin",
-  
-    "avatar":  "",
-  
-    "telefono":  "8119184947"
- 
-  },
-   {
-  
-    "id":  9,
-  
-    "firstName":  "Javier",
-  
-    "lastName":  "Oliva",
-  
-    "email":  "ifricker8@nps.gov",
-  
-    "password":  "tHubLbce",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario3.jpg",
-  
-    "telefono":  "3683855096"
- 
-  },
-   {
-  
-    "id":  10,
-  
-    "firstName":  "Jimena",
-  
-    "lastName":  "Estevez",
-  
-    "email":  "dgrassick9@arizona.edu",
-  
-    "password":  "x4WobgpY",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario3.jpg",
-  
-    "telefono":  "7035642161"
- 
-  },
-   {
-  
-    "id":  11,
-  
-    "firstName":  "Rodrigo",
-  
-    "lastName":  "Ponti",
-  
-    "email":  "dwheara@ezinearticles.com",
-  
-    "password":  "T0Wumbhxj",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario2.jpg",
-  
-    "telefono":  "6864851621"
- 
-  },
-   {
-  
-    "id":  12,
-  
-    "firstName":  "Camila",
-  
-    "lastName":  "Vega",
-  
-    "email":  "srosebothamb@netscape.com",
-  
-    "password":  "FlwqQZi",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario4.jpg",
-  
-    "telefono":  "0668585188"
- 
-  },
-   {
-  
-    "id":  13,
-  
-    "firstName":  "Rodrigo",
-  
-    "lastName":  "Prieto",
-  
-    "email":  "mrazouxc@irs.gov",
-  
-    "password":  "7QjOjVe9",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario6.jpg",
-  
-    "telefono":  "2113447665"
- 
-  },
-   {
-  
-    "id":  14,
-  
-    "firstName":  "Carolina",
-  
-    "lastName":  "Gomez",
-  
-    "email":  "pchrismasd@acquirethisname.com",
-  
-    "password":  "94rlQqUK1",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario1.jpg",
-  
-    "telefono":  "8066170424"
- 
-  },
-   {
-  
-    "id":  15,
-  
-    "firstName":  "Javier",
-  
-    "lastName":  "Abal",
-  
-    "email":  "bferrymane@tmall.com",
-  
-    "password":  "5zaIeZAg",
-  
-    "type":  "Admin",
-  
-    "avatar":  "",
-  
-    "telefono":  "7146336859"
- 
-  },
-   {
-  
-    "id":  16,
-  
-    "firstName":  "Dario",
-  
-    "lastName":  "Estevez",
-  
-    "email":  "lmcnirlanf@baidu.com",
-  
-    "password":  "hdUGfDvW6zc",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario5.jpg",
-  
-    "telefono":  "4564301918"
- 
-  },
-   {
-  
-    "id":  17,
-  
-    "firstName":  "Tatiana",
-  
-    "lastName":  "Gimenez",
-  
-    "email":  "blaxtonneg@google.com",
-  
-    "password":  "bTYk7gPz",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario1.jpg",
-  
-    "telefono":  "5955654194"
- 
-  },
-   {
-  
-    "id":  18,
-  
-    "firstName":  "Javier",
-  
-    "lastName":  "Rodriguez",
-  
-    "email":  "ucurzeyh@shareasale.com",
-  
-    "password":  "txQ4zY6hf",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario6.jpg",
-  
-    "telefono":  "2211713998"
- 
-  },
-   {
-  
-    "id":  19,
-  
-    "firstName":  "Jimena",
-  
-    "lastName":  "Ponti",
-  
-    "email":  "lditti@hud.gov",
-  
-    "password":  "Jbbv3D4",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario5.jpg",
-  
-    "telefono":  "1478027657"
- 
-  },
-   {
-  
-    "id":  20,
-  
-    "firstName":  "Tatiana",
-  
-    "lastName":  "Carral",
-  
-    "email":  "bbracej@artisteer.com",
-  
-    "password":  "RAI2RJAbKXEd",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario3.jpg",
-  
-    "telefono":  "4334132286"
- 
-  },
-   {
-  
-    "id":  21,
-  
-    "firstName":  "Roberto",
-  
-    "lastName":  "Vega",
-  
-    "email":  "pritchardk@twitpic.com",
-  
-    "password":  "fTlpIZ3",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario6.jpg",
-  
-    "telefono":  "4683814110"
- 
-  },
-   {
-  
-    "id":  22,
-  
-    "firstName":  "Carolina",
-  
-    "lastName":  "Propato",
-  
-    "email":  "hauchterlonyl@prweb.com",
-  
-    "password":  "5Fz2S1bnkrn",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario1.jpg",
-  
-    "telefono":  "2123949787"
- 
-  },
-   {
-  
-    "id":  23,
-  
-    "firstName":  "Eduardo",
-  
-    "lastName":  "Estevez",
-  
-    "email":  "crennerm@bloglines.com",
-  
-    "password":  "jZ6GzFC",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario1.jpg",
-  
-    "telefono":  "2572806991"
- 
-  },
-   {
-  
-    "id":  24,
-  
-    "firstName":  "Jimena",
-  
-    "lastName":  "Vega",
-  
-    "email":  "bhucklen@springer.com",
-  
-    "password":  "i9McMzsaT",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario3.jpg",
-  
-    "telefono":  "4954377420"
- 
-  },
-   {
-  
-    "id":  25,
-  
-    "firstName":  "Rodrigo",
-  
-    "lastName":  "Gimenez",
-  
-    "email":  "sklimovo@flavors.me",
-  
-    "password":  "2cahgkg",
-  
-    "type":  "Customer",
-  
-    "avatar":  "",
-  
-    "telefono":  "7072275509"
- 
-  },
-   {
-  
-    "id":  26,
-  
-    "firstName":  "Rodrigo",
-  
-    "lastName":  "Carral",
-  
-    "email":  "kdignonp@ifeng.com",
-  
-    "password":  "8s5TCwFJhbE",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario6.jpg",
-  
-    "telefono":  "9998667925"
- 
-  },
-   {
-  
-    "id":  27,
-  
-    "firstName":  "Rosa",
-  
-    "lastName":  "Rodriguez",
-  
-    "email":  "rpencostq@cafepress.com",
-  
-    "password":  "HcjZH2KCz",
-  
-    "type":  "Customer",
-  
-    "avatar":  "/images/avatars/usuario2.jpg",
-  
-    "telefono":  "4294041552"
- 
-  },
-   {
-  
-    "id":  28,
-  
-    "firstName":  "Tatiana",
-  
-    "lastName":  "Carral",
-  
-    "email":  "ekinmondr@so-net.ne.jp",
-  
-    "password":  "QF77WeMh",
-  
-    "type":  "Customer",
-  
-    "avatar":  "",
-  
-    "telefono":  "1826398074"
- 
-  },
-   {
-  
-    "id":  29,
-  
-    "firstName":  "Rodrigo",
-  
-    "lastName":  "Rodriguez",
-  
-    "email":  "lsuddells@360.cn",
-  
-    "password":  "tipwYPpi",
-  
-    "type":  "Admin",
-  
-    "avatar":  "/images/avatars/usuario6.jpg",
-  
-    "telefono":  "0472148192"
- 
-  },
-   {
-  
-    "id":  30,
-  
-    "firstName":  "Jorge",
-  
-    "lastName":  "Gomez",
-  
-    "email":  "atrundellt@goodreads.com",
-  
-    "password":  "tRQcFWMwjhL",
-  
-    "type":  "Admin",
-  
-    "avatar":  "",
-  
-    "telefono":  "3781183165"
- 
-  },
  {
-  "id": 31,
-  "email": "eg87@gmail.com",
-  "password": "1234567888888",
-  "avatar": "default-image.png"
+  "id": 1,
+  "firstName": "Javier",
+  "lastName": "Vega",
+  "email": "pcomberbeach0@mediafire.com",
+  "password": "xq4Aouv",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario2.jpg",
+  "telefono": "6430200272"
+ },
+ {
+  "id": 2,
+  "firstName": "Camila",
+  "lastName": "Vega",
+  "email": "rrossander1@amazon.co.jp",
+  "password": "9xapocbWcXQ",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario6.jpg",
+  "telefono": "6235045824"
+ },
+ {
+  "id": 3,
+  "firstName": "Carolina",
+  "lastName": "Diaz",
+  "email": "mscholar2@webs.com",
+  "password": "ovyoh1",
+  "type": "Admin",
+  "avatar": "",
+  "telefono": "1984867601"
+ },
+ {
+  "id": 4,
+  "firstName": "Eduardo",
+  "lastName": "Perez",
+  "email": "ecruickshanks3@bravesites.com",
+  "password": "MFqPr8Yq",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario2.jpg",
+  "telefono": "8853746238"
+ },
+ {
+  "id": 5,
+  "firstName": "Rosa",
+  "lastName": "Abal",
+  "email": "anarrie4@patch.com",
+  "password": "A3zUMHoG",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario2.jpg",
+  "telefono": "3260242104"
+ },
+ {
+  "id": 6,
+  "firstName": "Dario",
+  "lastName": "Estevez",
+  "email": "bcarradice5@telegraph.co.uk",
+  "password": "lSo89jxFNk",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario3.jpg",
+  "telefono": "8226537924"
+ },
+ {
+  "id": 7,
+  "firstName": "Jorge",
+  "lastName": "Rodriguez",
+  "email": "lflanigan6@google.es",
+  "password": "KjSj3nc0hn8c",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario4.jpg",
+  "telefono": "8847403383"
+ },
+ {
+  "id": 8,
+  "firstName": "Tatiana",
+  "lastName": "Gomez",
+  "email": "hwinstanley7@unicef.org",
+  "password": "oXahsu",
+  "type": "Admin",
+  "avatar": "",
+  "telefono": "8119184947"
+ },
+ {
+  "id": 9,
+  "firstName": "Javier",
+  "lastName": "Oliva",
+  "email": "ifricker8@nps.gov",
+  "password": "tHubLbce",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario3.jpg",
+  "telefono": "3683855096"
+ },
+ {
+  "id": 10,
+  "firstName": "Jimena",
+  "lastName": "Estevez",
+  "email": "dgrassick9@arizona.edu",
+  "password": "x4WobgpY",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario3.jpg",
+  "telefono": "7035642161"
+ },
+ {
+  "id": 11,
+  "firstName": "Rodrigo",
+  "lastName": "Ponti",
+  "email": "dwheara@ezinearticles.com",
+  "password": "T0Wumbhxj",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario2.jpg",
+  "telefono": "6864851621"
+ },
+ {
+  "id": 12,
+  "firstName": "Camila",
+  "lastName": "Vega",
+  "email": "srosebothamb@netscape.com",
+  "password": "FlwqQZi",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario4.jpg",
+  "telefono": "0668585188"
+ },
+ {
+  "id": 13,
+  "firstName": "Rodrigo",
+  "lastName": "Prieto",
+  "email": "mrazouxc@irs.gov",
+  "password": "7QjOjVe9",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario6.jpg",
+  "telefono": "2113447665"
+ },
+ {
+  "id": 14,
+  "firstName": "Carolina",
+  "lastName": "Gomez",
+  "email": "pchrismasd@acquirethisname.com",
+  "password": "94rlQqUK1",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario1.jpg",
+  "telefono": "8066170424"
+ },
+ {
+  "id": 15,
+  "firstName": "Javier",
+  "lastName": "Abal",
+  "email": "bferrymane@tmall.com",
+  "password": "5zaIeZAg",
+  "type": "Admin",
+  "avatar": "",
+  "telefono": "7146336859"
+ },
+ {
+  "id": 16,
+  "firstName": "Dario",
+  "lastName": "Estevez",
+  "email": "lmcnirlanf@baidu.com",
+  "password": "hdUGfDvW6zc",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario5.jpg",
+  "telefono": "4564301918"
+ },
+ {
+  "id": 17,
+  "firstName": "Tatiana",
+  "lastName": "Gimenez",
+  "email": "blaxtonneg@google.com",
+  "password": "bTYk7gPz",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario1.jpg",
+  "telefono": "5955654194"
+ },
+ {
+  "id": 18,
+  "firstName": "Javier",
+  "lastName": "Rodriguez",
+  "email": "ucurzeyh@shareasale.com",
+  "password": "txQ4zY6hf",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario6.jpg",
+  "telefono": "2211713998"
+ },
+ {
+  "id": 19,
+  "firstName": "Jimena",
+  "lastName": "Ponti",
+  "email": "lditti@hud.gov",
+  "password": "Jbbv3D4",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario5.jpg",
+  "telefono": "1478027657"
+ },
+ {
+  "id": 20,
+  "firstName": "Tatiana",
+  "lastName": "Carral",
+  "email": "bbracej@artisteer.com",
+  "password": "RAI2RJAbKXEd",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario3.jpg",
+  "telefono": "4334132286"
+ },
+ {
+  "id": 21,
+  "firstName": "Roberto",
+  "lastName": "Vega",
+  "email": "pritchardk@twitpic.com",
+  "password": "fTlpIZ3",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario6.jpg",
+  "telefono": "4683814110"
+ },
+ {
+  "id": 22,
+  "firstName": "Carolina",
+  "lastName": "Propato",
+  "email": "hauchterlonyl@prweb.com",
+  "password": "5Fz2S1bnkrn",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario1.jpg",
+  "telefono": "2123949787"
+ },
+ {
+  "id": 23,
+  "firstName": "Eduardo",
+  "lastName": "Estevez",
+  "email": "crennerm@bloglines.com",
+  "password": "jZ6GzFC",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario1.jpg",
+  "telefono": "2572806991"
+ },
+ {
+  "id": 24,
+  "firstName": "Jimena",
+  "lastName": "Vega",
+  "email": "bhucklen@springer.com",
+  "password": "i9McMzsaT",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario3.jpg",
+  "telefono": "4954377420"
+ },
+ {
+  "id": 25,
+  "firstName": "Rodrigo",
+  "lastName": "Gimenez",
+  "email": "sklimovo@flavors.me",
+  "password": "2cahgkg",
+  "type": "Customer",
+  "avatar": "",
+  "telefono": "7072275509"
+ },
+ {
+  "id": 26,
+  "firstName": "Rodrigo",
+  "lastName": "Carral",
+  "email": "kdignonp@ifeng.com",
+  "password": "8s5TCwFJhbE",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario6.jpg",
+  "telefono": "9998667925"
+ },
+ {
+  "id": 27,
+  "firstName": "Rosa",
+  "lastName": "Rodriguez",
+  "email": "rpencostq@cafepress.com",
+  "password": "HcjZH2KCz",
+  "type": "Customer",
+  "avatar": "/images/avatars/usuario2.jpg",
+  "telefono": "4294041552"
+ },
+ {
+  "id": 28,
+  "firstName": "Tatiana",
+  "lastName": "Carral",
+  "email": "ekinmondr@so-net.ne.jp",
+  "password": "QF77WeMh",
+  "type": "Customer",
+  "avatar": "",
+  "telefono": "1826398074"
+ },
+ {
+  "id": 29,
+  "firstName": "Rodrigo",
+  "lastName": "Rodriguez",
+  "email": "lsuddells@360.cn",
+  "password": "tipwYPpi",
+  "type": "Admin",
+  "avatar": "/images/avatars/usuario6.jpg",
+  "telefono": "0472148192"
+ },
+ {
+  "id": 30,
+  "firstName": "Jorge",
+  "lastName": "Gomez",
+  "email": "atrundellt@goodreads.com",
+  "password": "tRQcFWMwjhL",
+  "type": "Admin",
+  "avatar": "",
+  "telefono": "3781183165"
  }
-
 ]

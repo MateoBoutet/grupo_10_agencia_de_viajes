@@ -11,7 +11,9 @@ router.get('/modifProducto', productosController.modif);
 router.get('/:id/edit', productosController.edit);
 router.put('/:id', productosController.update);
 
-router.delete('/:id/delete', productosController.delete)
+router.delete('/:id/delete', productosController.delete);
+
+router.get('/detail/:id', productosController.productDetail);
 
 
 
