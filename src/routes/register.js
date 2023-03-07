@@ -17,6 +17,8 @@ let multerDiskStorage = multer.diskStorage({
 });
 
 const upload = multer ({storage:multerDiskStorage});
+const bcrypt = require('bcryptjs');
+let passEncriptada = bcrypt.hashSync('monito123', 10);
 
 const {body} = require('express-validator');
 

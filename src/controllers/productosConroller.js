@@ -56,7 +56,7 @@ let productosController = {
 			return producto.id == id
 		})
 
-		res.render("productDetail.ejs", {producto: productoFiltrado})
+		res.render(path.resolve(__dirname, '../views/productDetail.ejs'), {producto: productoFiltrado})
 }
 }
 
