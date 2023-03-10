@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head.ejs'); -%>
+    <!-------vinculo hoja de estilo css-->
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-----------vinculo hoja de estilo modal y js-->
+    <link rel="stylesheet" href="/css/modal.css" />
+    <script src="/js/modal.js"></script>
+</head>
+
+<body>
+  <%- include('partials/header.ejs'); -%>
+    <main>
+      <div class="contenedor">
+        <form action="/alojamiento/search" class="search-bar">
+          <input type="text" placeholder="Busca tu destino" name="q" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="row title">
+        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12">
+          <hr />
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+          <h3>Destacado</h3>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12">
+          <hr />
+        </div>
+      </div>
+      <section class="main">
+        <section class="ofertas">
+          <% alojamientos.forEach(alojamiento=> { %>
+            <article class="producto">
+              <a href="/paquetes/detail/<%= alojamiento.id %>">
+                <img src="/img/capilla.jpg" alt="Capilla del monte" class="imagenes" />
+                <section class="articulo">
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <div class="nombres-precios">
+                    <h3 class="nombres">
+                      <%= alojamiento.destino %>
+                    </h3>
+                    <div class="borde"></div>
+                    <div class="precios-tarifa">
+                      <h2 class="precios">
+                        <%= alojamiento.precio %>
+                      </h2>
+                      <h4 class="tarifa">
+                        <%= alojamiento.tarifa %>
+                      </h4>
+                    </div>
+                    <button class="button-model" id="myBtn"></button>
+                </section>
+              </a>
+            </article>
+            <% }) %>
+        </section>
+
+        <!--------------Titulo Ofertas--------------------->
+        <div class="row title">
+          <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12">
+            <hr />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <h3>Ofertas</h3>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12">
+            <hr />
+          </div>
+        </div>
+        <section class="ofertas">
+          <% alojamientos.forEach(alojamiento=> { %>
+            <article class="producto">
+              <a href="/paquetes/detail/<%= alojamiento.id %>">
+                <img src="/img/capilla.jpg" alt="Capilla del monte" class="imagenes" />
+                <section class="articulo">
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <div class="nombres-precios">
+                    <h3 class="nombres">
+                      <%= alojamiento.destino %>
+                    </h3>
+                    <div class="borde"></div>
+                    <div class="precios-tarifa">
+                      <h2 class="precios">
+                        <%= alojamiento.precio %>
+                      </h2>
+                      <h4 class="tarifa">
+                        <%= alojamiento.tarifa %>
+                      </h4>
+                    </div>
+                    <button class="button-model" id="myBtn"></button>
+                </section>
+              </a>
+            </article>
+            <% }) %>
+        </section>
+      </section>
+    </main>
+    <%- include('partials/footer.ejs'); -%>
+</body>
+
+</html>

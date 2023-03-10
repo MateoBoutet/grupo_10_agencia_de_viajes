@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include('partials/head.ejs'); -%>
+
+<head>
+    <%- include('partials/head.ejs'); -%>
         <link rel="stylesheet" href="/css/index.css" />
         <link rel="stylesheet" href="/css/formCarga.css">
-    </head>
+</head>
+
 <body>
     <%- include('partials/header.ejs'); -%>
 
-    <h2>Modifica tu producto</h2>
-    <form>
-      <div class="content">
-        <label for="product-name">Nombre del producto:</label>
-        <input type="text" id="product-name" name="product-name">
-        
-        <label for="product-description">Descripción:</label>
-        <textarea id="product-description" name="product-description"></textarea>
+        <h2>Modifica tu producto</h2>
+        <form action="/paquetes/modifProducto/update" method="post">
+            <div class="content">
+                <label for="id">ID:</label>
+                <input type="text" name="id" id="id" required />
+                <% if (locals.error){%>
+                    <div class="text-danger">
+                        <%= error %>
+                    </div>
+                    <%}%>
 
-        <label for="product-price">Tarifa:</label>
-        <input type="text" id="product-tarifa" name="product-tarifa">
-        
-        <label for="product-price">Precio:</label>
-        <input type="number" id="product-price" name="product-price">
-        
-        <label for="file-input" class="custom-file-input">Elige un archivo</label>
-        <input type="file" id="file-input" class="archivo">
-        
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
-      </div>  
-    </form>
+                        <label for="destino">Destino:</label>
+                        <input type="text" id="destino" name="destino" required>
 
-    <%- include('partials/footer.ejs'); -%>
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" required>
+
+                        <label for="file-input" class="custom-file-input">Elige un archivo</label>
+                        <input type="file" id="file-input" class="archivo" required>
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+            </div>
+        </form>
+
+        <%- include('partials/footer.ejs'); -%>
 </body>
+
 </html>

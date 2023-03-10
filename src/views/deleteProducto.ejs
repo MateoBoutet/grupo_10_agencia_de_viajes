@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.ejs'); -%>
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/formCarga.css">
+</head>
+
+<body>
+    <%- include('partials/header.ejs'); -%>
+
+        <h2>Eliminar producto</h2>
+        <form action="/paquetes/deleteProducto/delete" method="post">
+            <div class="content">
+                <label for="id">ID:</label>
+                <input type="text" name="id" id="id" required />
+                <% if (locals.error){%>
+                    <div class="text-danger">
+                        <%= error %>
+                    </div>
+                    <%}%>
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+            </div>
+        </form>
+
+        <%- include('partials/footer.ejs'); -%>
+</body>

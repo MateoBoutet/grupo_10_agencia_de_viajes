@@ -1,5 +1,5 @@
 const path = require('path');
-const User = require('../../models/User');
+const User = require('../data/models/User');
 
 
 let userProfileController = {

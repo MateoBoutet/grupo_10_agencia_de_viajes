@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include('partials/head.ejs'); -%>
+
+<head>
+    <%- include('partials/head.ejs'); -%>
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/formCarga.css">
-    </head>
+</head>
+
 <body>
     <header>
         <%- include('partials/header.ejs'); -%>
     </header>
     <h2>Carga tu producto</h2>
-    <form>
-      <div class="content">
-        <label for="product-name">Nombre del producto:</label>
-        <input type="text" id="product-name" name="product-name" required>
-        
-        <label for="product-description">Descripción:</label>
-        <textarea id="product-description" name="product-description" required></textarea>
+    <form action="/paquetes/formCarga/create" method="post">
+        <div class="content">
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
 
-        <label for="product-price">Tarifa:</label>
-        <input type="text" id="product-tarifa" name="product-tarifa" required>
-        
-        <label for="product-price">Precio:</label>
-        <input type="number" id="product-price" name="product-price" required>
-        
-        <label for="file-input" class="custom-file-input">Elige un archivo</label>
-        <input type="file" id="file-input" class="archivo" required>
-        
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
-      </div>  
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required>
+
+            <label for="file-input" class="custom-file-input">Elige un archivo</label>
+            <input type="file" id="file-input" class="archivo" required>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </div>
     </form>
 
-<!--         <div class="formCarg">
+    <!--         <div class="formCarg">
             <div class="formCarg-der">
             <div class="provincia">
                 <label for="">Provincia:</label>
@@ -84,7 +80,7 @@
             </div>
         </div> -->
 
-<!--     <main>
+    <!--     <main>
         <div class="main">
         <label><h2>Cargar un producto</h2></label>
         <form action="/formCarga" method="POST" class="register">
@@ -178,4 +174,5 @@
 
     <%- include('partials/footer.ejs'); -%>
 </body>
+
 </html>
