@@ -28,20 +28,6 @@
   "dias": 5
  },
  {
-  "id": 3,
-  "origen": "Buenos Aires",
-  "destino": "Mar del Plata",
-  "precio": 112446,
-  "periodo": "Abril 2023",
-  "imagen": "imagen3.jpg",
-  "asistenciaViajero": true,
-  "reservaFlexible": false,
-  "traslado": "aereo business",
-  "alojamiento": "hostel",
-  "habitacion": "doble matrimonial",
-  "dias": 17
- },
- {
   "id": 4,
   "origen": "Buenos Aires",
   "destino": "Mar del Plata",
