@@ -40,6 +40,7 @@ const registerController = {
       })
       // Si ocurre un error al crear el usuario, lo mostramos en la consola
       .catch(function(error) {
+        console.log('No se registraron datos en la BD');
         console.log(error);
       });
     } else {

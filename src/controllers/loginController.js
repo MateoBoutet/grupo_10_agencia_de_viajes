@@ -17,41 +17,6 @@ let loginController = {
     },
 
     procesoLogin: (req, res) => {
-        // const resultValidation = validationResult(req);
-
-        // if (resultValidation.errors.length > 0){
-        //     return res.render (path.resolve(__dirname, "./../views/login.ejs"), {
-        //         errors: resultValidation.mapped(),
-        //         oldData: req.body
-        //     });
-        // }
-
-        // let userToLogin = User.EncontrarPorCampo('email', req.body.email);
-        // if (userToLogin){
-        // let passwordOk = bcryptjs.compareSync (req.body.password,userToLogin.password);
-        //     if (passwordOk){
-        //         delete userToLogin.password;
-        //         req.session.userLogged = userToLogin;
-        //         return res.redirect ('/userProfile');
-        //     }
-        // }
-
-        // return res.render(path.resolve(__dirname, "./../views/login.ejs"), {
-        //     errors: {
-        //         email: {
-        //             msg:'la contraseña es inválida'
-        //         }
-        //     }
-        // });
-
-        // return res.render(path.resolve(__dirname, "./../views/login.ejs"), {
-        //     errors: {
-        //         email: {
-        //             msg:'El usuario ingresado no se encuentra registrado'
-        //         }
-        //     }
-        // });
-
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
