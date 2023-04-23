@@ -38,7 +38,7 @@ const User = sequelize.define('users', {
     type: Sequelize.STRING,
     allowNull: true
   },
-  telefono: {
+  phone: {
     type: Sequelize.STRING,
     allowNull: false
   },

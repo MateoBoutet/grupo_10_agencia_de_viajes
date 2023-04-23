@@ -24,12 +24,12 @@ const registerController = {
     if(errors.isEmpty()) {
         User.create({
             firstName: req.body.name,
-            lastName: req.body.surname,
+            lastName: req.body.lastName,
             email: req.body.email,
             // Encriptamos la contraseña antes de guardarla en la base de datos usando el método hashSync de bcrypt
             password: bcrypt.hashSync(req.body.password, 10),
             birthdate: req.body.birthdate,
-            telefono: req.body.telefono,
+            phone: req.body.phone,
             type: req.body.type,
             avatar: req.file.filename
           })
