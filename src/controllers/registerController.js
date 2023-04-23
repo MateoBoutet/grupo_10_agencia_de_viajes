@@ -22,18 +22,17 @@ const registerController = {
 
     // Si no hay errores de validación, creamos un nuevo usuario en la base de datos
     if(errors.isEmpty()) {
-      User.create({
-        name: req.body.name,
-        surname: req.body.surname,
-        email: req.body.email,
-        // Encriptamos la contraseña antes de guardarla en la base de datos usando el método hashSync de bcrypt
-        password: bcrypt.hashSync(req.body.password, 10),
-        birthdate: req.body.birthdate,
-        dni: req.body.dni,
-        phone: req.body.phone,
-        type: req.body.type,
-        image: req.file.filename
-      })
+        User.create({
+            firstName: req.body.name,
+            lastName: req.body.surname,
+            email: req.body.email,
+            // Encriptamos la contraseña antes de guardarla en la base de datos usando el método hashSync de bcrypt
+            password: bcrypt.hashSync(req.body.password, 10),
+            birthdate: req.body.birthdate,
+            telefono: req.body.telefono,
+            type: req.body.type,
+            avatar: req.file.filename
+          })
       // Si se crea el usuario exitosamente, redirigimos al usuario a la página de inicio de sesión
       .then(function() {
         return res.redirect('/login');
@@ -45,6 +44,7 @@ const registerController = {
       });
     } else {
         // Si hay errores de validación, renderizamos la vista de registro y mostramos los errores al usuario
+        console.log(errors);
         res.render(path.resolve(__dirname, "./../views/register.ejs"), 
         { errors: errors.errors, old: req.body });
     }

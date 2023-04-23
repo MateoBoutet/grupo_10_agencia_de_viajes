@@ -2,19 +2,23 @@ const { Sequelize } = require('sequelize');
 const sequelize = require('../database');
 
 // Define el modelo User que representa la tabla users en la base de datos.
-const User = sequelize.define('User', {
+const User = sequelize.define('users', {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     primaryKey: true,
     allowNull: false
   },
-  name: {
+  firstName: {
     type: Sequelize.STRING,
     allowNull: false
   },
-  surname: {
+  lastName: {
     type: Sequelize.STRING,
+    allowNull: false
+  },
+  birthdate: {
+    type: Sequelize.DATEONLY,
     allowNull: false
   },
   email: {
@@ -26,26 +30,25 @@ const User = sequelize.define('User', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  birthdate: {
-    type: Sequelize.DATEONLY,
-    allowNull: false
-  },
-  dni: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-    unique: true
-  },
-  phone: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
   type: {
     type: Sequelize.ENUM('admin', 'user'),
     allowNull: false
   },
-  image: {
+  avatar: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  telefono: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+  created_at: {
+    type: Sequelize.DATE,
+    defaultValue: Sequelize.NOW
+  },
+  updated_at: {
+    type: Sequelize.DATE,
+    defaultValue: Sequelize.NOW
   }
 });
 
@@ -60,7 +63,6 @@ sequelize.sync({ force: false })
 
 // Exporta el modelo User.
 module.exports = User;
-
 
 
 /* // Importamos los módulos de sequelize y DataTypes
