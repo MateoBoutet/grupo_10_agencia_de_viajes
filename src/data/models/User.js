@@ -1,69 +1,130 @@
-//1. guardar al usuario en la db
-//2. buscar al usuario que se quiere loguear por su email
-//3. buscar a un usuario por su id
-//4. editar la informacion de un usuario
-//5. eliminar a un usuario de la db
+const { Sequelize } = require('sequelize');
+const sequelize = require('../database');
 
+// Define el modelo User que representa la tabla users en la base de datos.
+const User = sequelize.define('User', {
+  id: {
+    type: Sequelize.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+    allowNull: false
+  },
+  name: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  surname: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    unique: true
+  },
+  password: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  birthdate: {
+    type: Sequelize.DATEONLY,
+    allowNull: false
+  },
+  dni: {
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    unique: true
+  },
+  phone: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  type: {
+    type: Sequelize.ENUM('admin', 'user'),
+    allowNull: false
+  },
+  image: {
+    type: Sequelize.STRING,
+    allowNull: false
+  }
+});
 
-const path = require('path');
-const fs = require("fs");
+// Sincroniza el modelo User con la base de datos.
+sequelize.sync({ force: false })
+  .then(() => {
+    console.log('Conexión a DB Exitosa');
+  })
+  .catch((error) => {
+    console.log(`Error al sincronizar las tablas: ${error}`);
+  });
 
-
-const User = {
-    fileName: '../users.json',
-
-    getData: function () {
-        return JSON.parse(fs.readFileSync(path.resolve(__dirname, this.fileName),'utf-8')); 
-    },
-
-    generarId: function () {
-        let todosLosUsuarios = this.findAll();
-        let ultimoUsuario = todosLosUsuarios.pop();
-        if (ultimoUsuario){
-            return ultimoUsuario.id + 1;
-
-        }
-        return 1;
-      
-    },
-
-    findAll: function () {
-        return this.getData();
-    },
-
-    EncuentraPorPk: function (id){
-        let todosLosUsuarios = this.findAll();
-        let EncontrarUsuario = todosLosUsuarios.find(unUsuario => unUsuario.id === id);
-        return EncontrarUsuario;
-    },
-
-    EncontrarPorCampo: function (campo,texto) {
-    let todosLosUsuarios = this.findAll();
-    let EncontrarUsuario = todosLosUsuarios.find(unUsuario => unUsuario[campo] === texto);
-    return EncontrarUsuario;
-
-    },
-
-    create: function (userData) {
-        let todosLosUsuarios = this.findAll();
-        let nuevoUsuario = {
-            id: this.generarId(),
-            ...userData
-        }
-        todosLosUsuarios.push(nuevoUsuario);
-        fs.writeFileSync(path.resolve(__dirname, this.fileName),JSON.stringify(todosLosUsuarios,null,' '));
-        return nuevoUsuario;    
-    },
-
-    delete: function (id){
-        let todosLosUsuarios= this.findAll();
-        let usuariosFinales = todosLosUsuarios.filter(unUsuario => unUsuario.id != id)
-        fs.writeFileSync(path.resolve(__dirname, this.fileName),JSON.stringify(usuariosFinales,null,' '));
-        return true; 
-    },
-
-
-}
-
-
+// Exporta el modelo User.
 module.exports = User;
+
+
+
+/* // Importamos los módulos de sequelize y DataTypes
+const { DataTypes } = require('sequelize');
+
+// Importamos la instancia de sequelize
+const sequelize = require('../database');
+
+// Creamos un modelo de usuario (User) con sus atributos
+const User = sequelize.define('User', {
+    // Primer nombre del usuario, de tipo string con un máximo de 50 caracteres, no puede ser nulo
+    firstName: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    },
+    // Apellido del usuario, de tipo string con un máximo de 50 caracteres, no puede ser nulo
+    lastName: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    },
+    // Fecha de nacimiento del usuario, de tipo date sin hora, no puede ser nulo
+    birthdate: {
+        type: DataTypes.DATEONLY,
+        allowNull: false,
+    },
+    // Correo electrónico del usuario, de tipo string con un máximo de 100 caracteres, no puede ser nulo y debe ser único
+    email: {
+        type: DataTypes.STRING(100),
+        allowNull: false,
+        unique: true,
+    },
+    // Contraseña del usuario, de tipo string con un máximo de 60 caracteres, no puede ser nulo
+    password: {
+        type: DataTypes.STRING(60),
+        allowNull: false,
+    },
+    // Tipo de usuario, puede ser 'admin' o 'user', no puede ser nulo y su valor por defecto es 'user'
+    type: {
+        type: DataTypes.ENUM('admin', 'user'),
+        allowNull: false,
+        defaultValue: 'user',
+    },
+    // Avatar del usuario, de tipo string con un máximo de 100 caracteres, no puede ser nulo y su valor por defecto es 'default-image.png'
+    avatar: {
+        type: DataTypes.STRING(100),
+        allowNull: false,
+        defaultValue: 'default-image.png',
+    },
+    // Número de teléfono del usuario, de tipo string con un máximo de 20 caracteres, puede ser nulo
+    telefono: {
+        type: DataTypes.STRING(20),
+        allowNull: true,
+    },
+}, {
+    // Nombre de la tabla en la base de datos
+    tableName: 'users',
+    // Incluir los timestamps de creación y actualización en cada registro
+    timestamps: true,
+    // Nombre de la columna para el timestamp de creación
+    createdAt: 'created_at',
+    // Nombre de la columna para el timestamp de actualización
+    updatedAt: 'updated_at',
+});
+
+// Exportamos el modelo User para usarlo en otras partes de la aplicación
+module.exports = User;
+ */

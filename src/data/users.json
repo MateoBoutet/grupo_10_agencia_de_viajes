@@ -298,5 +298,16 @@
   "type": "Admin",
   "avatar": "",
   "telefono": "3781183165"
+ },
+ {
+  "id": 31,
+  "firstName": "Sergio",
+  "lastName": "Aquino",
+  "birthdate": "2009-06-05",
+  "email": "saquino.soc@gmail.com",
+  "password": "$2a$10$t7DtSEcmgqxSAy5XWD9z5.w6PegOl9hU7fw5.YMVLdZ8o.Hoym0cC",
+  "type": "Administrador",
+  "avatar": "1682214754475.jpg",
+  "telefono": "01136972847"
  }
 ]

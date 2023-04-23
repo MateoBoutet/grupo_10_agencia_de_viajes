@@ -1,77 +1,55 @@
-const fs = require('fs');
-const path = require('path');
-const {validationResult} = require('express-validator');
-const { callbackify } = require('util');
+// Importamos el módulo bcrypt para encriptar la contraseña de usuario
+const bcrypt = require('bcryptjs');
+// Importamos la función validationResult de express-validator para validar los campos del formulario de registro
+const { validationResult } = require('express-validator');
+// Importamos el módulo path para resolver la ruta de la vista de registro
+const path = require("path");
+
+// Importamos el modelo User para poder crear nuevos usuarios en la base de datos
 const User = require('../data/models/User');
-const usersFilePath = path.join(__dirname,'../../data/users.json');
-const bcryptjs = require ('bcryptjs');
 
+// Creamos un objeto que contiene los métodos que se encargan de mostrar el formulario de registro y procesar la información del mismo
+const registerController = {
+  // Este método se encarga de mostrar la vista de registro al usuario
+  show: function(req, res) {
+    res.render(path.resolve(__dirname, "./../views/register.ejs"));
+  },
 
-let registerController = {
-    register: (req, res) => {
-        if (req.session.userLogged) {
-            return res.redirect('/userProfile');
-        }
-        
-        res.render(path.resolve(__dirname, "./../views/register.ejs"));
-    },
-    procesoRegister: (req,res) => {
+  // Este método se encarga de procesar la información del formulario de registro
+  process: function(req, res) {
+    // Validamos los campos del formulario usando la función validationResult de express-validator
+    const errors = validationResult(req);
 
-        const resultValidation = validationResult(req);
-        
-        if (resultValidation.errors.length > 0){
-            return res.render (path.resolve(__dirname, "./../views/register.ejs"), {
-                errors: resultValidation.mapped(),
-                oldData: req.body
-            });
-        }
-
-        if (req.body.password !== req.body.confpassword) {
-            return res.render (path.resolve(__dirname, "./../views/register.ejs"), {
-                errors: {
-                    password: {
-                        msg: "El password debe coincidir"
-                    },
-                    confpassword: {
-                        msg: "El password debe coincidir"
-                    }
-                },
-                oldData: req.body
-            });
-        }
-
-        let usuarioEnDB = User. EncontrarPorCampo('email', req.body.email);
-
-        if (usuarioEnDB) {
-            return res.render(path.resolve(__dirname, "./../views/register.ejs"),{
-                errors: {
-                    email: {
-                        msg:'Este usuario ya se encuentra registrado'
-                    }
-                },
-                oldData: req.body
-            });
-        }
-
-        let usuarioNuevo = {
-			firstName: req.body.name,
-			lastName: req.body.surname,
-            birthdate: req.body.birthdate,
-			email: req.body.email,
-			password: bcryptjs.hashSync(req.body.password, 10),
-			type: req.body.type,
-			avatar: req.file ? req.file.filename : "default-image.png",
-            telefono: req.body.phone
-        };
-
-        let UsuarioCreado = User.create(usuarioNuevo);
-
-        //users.push(usuarioNuevo);
-
-        //fs.writeFileSync(usersFilePath,JSON.stringify(users, null, " "));
-        res.redirect('/login');
-
+    // Si no hay errores de validación, creamos un nuevo usuario en la base de datos
+    if(errors.isEmpty()) {
+      User.create({
+        name: req.body.name,
+        surname: req.body.surname,
+        email: req.body.email,
+        // Encriptamos la contraseña antes de guardarla en la base de datos usando el método hashSync de bcrypt
+        password: bcrypt.hashSync(req.body.password, 10),
+        birthdate: req.body.birthdate,
+        dni: req.body.dni,
+        phone: req.body.phone,
+        type: req.body.type,
+        image: req.file.filename
+      })
+      // Si se crea el usuario exitosamente, redirigimos al usuario a la página de inicio de sesión
+      .then(function() {
+        return res.redirect('/login');
+      })
+      // Si ocurre un error al crear el usuario, lo mostramos en la consola
+      .catch(function(error) {
+        console.log(error);
+      });
+    } else {
+        // Si hay errores de validación, renderizamos la vista de registro y mostramos los errores al usuario
+        res.render(path.resolve(__dirname, "./../views/register.ejs"), 
+        { errors: errors.errors, old: req.body });
     }
+  }
 };
 
+// Exportamos el objeto registerController para que pueda ser usado en otras partes de la aplicación
 module.exports = registerController;
+

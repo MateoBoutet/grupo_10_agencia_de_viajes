@@ -46,8 +46,8 @@ const validations = [
     })
 ]
 
-router.get('/',registerController.register);
-router.post('/', upload.single('imagenUsuario'), validations, registerController.procesoRegister);
+router.get('/',registerController.show);
+router.post('/', upload.single('imagenUsuario'), validations, registerController.process);
 
 
 module.exports = router;
