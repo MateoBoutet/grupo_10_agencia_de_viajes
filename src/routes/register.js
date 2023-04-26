@@ -23,7 +23,7 @@ const {body} = require('express-validator');
 const validations = [
     body('email').notEmpty().withMessage('Este campo es obligatorio').bail().isEmail().withMessage('El formato de Email debe ser válido'),
     body('name').notEmpty().withMessage('Este campo es obligatorio'),
-    body('surname').notEmpty().withMessage('Este campo es obligatorio'),
+    body('lastName').notEmpty().withMessage('Este campo es obligatorio'),
     body('birthdate').notEmpty().withMessage('Este campo es obligatorio'),
     body('phone').notEmpty().withMessage('Este campo es obligatorio').bail().isInt().withMessage('debe ingresar sólo numeros'),
     body ('type').notEmpty().withMessage('Debes seleccionar una opción'),
@@ -46,8 +46,8 @@ const validations = [
     })
 ]
 
-router.get('/',registerController.register);
-router.post('/', upload.single('imagenUsuario'), validations, registerController.procesoRegister);
+router.get('/',registerController.show);
+router.post('/', upload.single('imagenUsuario'), validations, registerController.process);
 
 
 module.exports = router;
