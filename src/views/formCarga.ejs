@@ -8,9 +8,8 @@
 </head>
 
 <body>
-    <header>
-        <%- include('partials/header.ejs'); -%>
-    </header>
+    <%- include('partials/header.ejs'); -%>
+    <main>
     <h2>Carga tu producto</h2>
     <form action="/paquetes/formCarga/create" method="post">
         <div class="content">
@@ -27,6 +26,7 @@
             <input type="reset" value="Borrar">
         </div>
     </form>
+</main>
 
     <!--         <div class="formCarg">
             <div class="formCarg-der">

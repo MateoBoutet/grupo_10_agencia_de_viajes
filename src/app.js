@@ -3,8 +3,10 @@ const morgan = require("morgan");
 const session = require("express-session");
 const methodOverride = require("method-override");
 const app = express();
+const path = require('path')
 
 app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, 'views'));
 
 let rutasIndex = require("./routes/index.js");
 let rutasLogin = require("./routes/login.js");
@@ -14,9 +16,6 @@ let rutasProductCart = require("./routes/productCart.js");
 /*let rutasProductDetail = require('./routes/productDetail.js'); */
 let rutasSession = require("./routes/session.js");
 let rutaProducto = require("./routes/productoRoute");
-let rutasVuelos = require("./routes/vuelos.js");
-let rutasAlojamiento = require("./routes/alojamiento.js");
-let rutasTraslados = require("./routes/traslados.js");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
@@ -36,6 +35,3 @@ app.use("/productCart", rutasProductCart);
 /* app.use('/productDetail', rutasProductDetail); */
 app.use("/session", rutasSession);
 app.use("/paquetes", rutaProducto);
-app.use("/vuelos", rutasVuelos);
-app.use("/alojamiento", rutasAlojamiento);
-app.use("/traslados", rutasTraslados);
