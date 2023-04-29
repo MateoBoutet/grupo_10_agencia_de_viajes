@@ -44,7 +44,7 @@ h1 {
   
   button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: var(--hooverbutton);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -53,5 +53,5 @@ h1 {
   }
   
   button:hover {
-    background-color: #555;
+    background-color: var(--hooverbutton);
   }
