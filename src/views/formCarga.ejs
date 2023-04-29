@@ -13,165 +13,38 @@
     <h2>Carga tu producto</h2>
     <form action="/paquetes/formCarga/create" method="post">
         <div class="content">
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required>
+
             <label for="destino">Destino:</label>
             <input type="text" id="destino" name="destino" required>
 
             <label for="precio">Precio:</label>
             <input type="number" id="precio" name="precio" required>
 
+            <label for="periodo">Periodo:</label>
+            <input type="text" id="periodo" name="periodo" required>
+
             <label for="file-input" class="custom-file-input">Elige un archivo</label>
             <input type="file" id="file-input" class="archivo" required>
+
+            <label for="traslado">Traslado:</label>
+            <input type="text" id="traslado" name="traslado" required>
+
+            <label for="alojamiento">Alojamiento:</label>
+            <input type="text" id="alojamiento" name="alojamiento" required>
+
+            <label for="habitacion">Habitacion:</label>
+            <input type="text" id="habitacion" name="habitacion" required>
+
+            <label for="dias">Dias:</label>
+            <input type="text" id="dias" name="dias" required>
 
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
         </div>
     </form>
 </main>
-
-    <!--         <div class="formCarg">
-            <div class="formCarg-der">
-            <div class="provincia">
-                <label for="">Provincia:</label>
-                <select name="Provincias" id="">
-                    <option value="Seleccionar Provincia">Seleccionar Provincia</option>
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Catamarca">Catamarca</option>
-                    <option value="Chaco">Chaco</option>
-                    <option value="Chubut">Chubut</option>
-                    <option value="Córdoba">Córdoba</option>
-                    <option value="Corrientes">Corrientes</option>
-                    <option value="Entre Ríos">Entre Ríos</option>
-                    <option value="Formosa">Formosa</option>
-                    <option value="Jujuy">Jujuy</option>
-                    <option value="La Pampa">La Pampa</option>
-                    <option value="La Rioja">La Rioja</option>
-                    <option value="Mendoza">Mendoza</option>
-                    <option value="Misiones">Misiones</option>
-                    <option value="Neuquen">Neuquen</option>
-                    <option value="Río Negro">Río Negro</option>
-                    <option value="Salta">Salta</option>
-                    <option value="San Juan">San Juan</option>
-                    <option value="San Luis">San Luis</option>
-                    <option value="Santa Cruz">Santa Cruz</option>
-                    <option value="Santa Fe">Santa Fe</option>
-                    <option value="Santiago del Estero">Santiago del Estero</option>
-                    <option value="Tierra del Fuego">Tierra del Fuego</option>
-                    <option value="Tucumán">Tucumán</option>
-                </select>
-            </div>
-            <div class="lugar">
-                <label for="">Lugar:</label>
-                <input type="text" name="lugar">
-            </div>
-            <div class="precio">
-                <label for="">Precio:</label>
-                <input type="numbre" name="precio">
-            </div>
-            </div>
-            <div class="formCarg-izq">
-            <div class="tarifa">
-                <label for="">Tarifa:</label>
-                <input type="text" name="tarifa">
-            </div>
-            <div class="imagen">
-                <label for="">Imagen:</label>
-                <input type="file" name="imagen">
-            </div>
-            </div>
-        </div> -->
-
-    <!--     <main>
-        <div class="main">
-        <label><h2>Cargar un producto</h2></label>
-        <form action="/formCarga" method="POST" class="register">
-            <nav>
-                <ul class="nav-izq-der">
-                <li><div class = 'nombre'>
-                    <label>Nombre:</label>
-                    <input type="text" name="Nombre y apellido" required minlength="2">
-                </div></li>
-                
-                <li><div class="sexo">
-                    <label>Provincia:</label>
-                    <select name="Provincias" id="">
-                        <option value="Seleccionar Provincia">Seleccionar Provincia</option>
-                        <option value="Buenos Aires">Buenos Aires</option>
-                        <option value="Catamarca">Catamarca</option>
-                        <option value="Chaco">Chaco</option>
-                        <option value="Chubut">Chubut</option>
-                        <option value="Córdoba">Córdoba</option>
-                        <option value="Corrientes">Corrientes</option>
-                        <option value="Entre Ríos">Entre Ríos</option>
-                        <option value="Formosa">Formosa</option>
-                        <option value="Jujuy">Jujuy</option>
-                        <option value="La Pampa">La Pampa</option>
-                        <option value="La Rioja">La Rioja</option>
-                        <option value="Mendoza">Mendoza</option>
-                        <option value="Misiones">Misiones</option>
-                        <option value="Neuquen">Neuquen</option>
-                        <option value="Río Negro">Río Negro</option>
-                        <option value="Salta">Salta</option>
-                        <option value="San Juan">San Juan</option>
-                        <option value="San Luis">San Luis</option>
-                        <option value="Santa Cruz">Santa Cruz</option>
-                        <option value="Santa Fe">Santa Fe</option>
-                        <option value="Santiago del Estero">Santiago del Estero</option>
-                        <option value="Tierra del Fuego">Tierra del Fuego</option>
-                        <option value="Tucumán">Tucumán</option>
-                    </select>
-                        </select>
-                </div></li>
-
-                <li><div class="apellido">
-                    <label>Lugar:</label>
-                    <input type="text" name="Nombre y apellido" required minlength="2">
-                </div></li>
-                </ul>
-
-                <ul class="nav-izq-der">
-                    <li><div class = 'dom'>
-                        <label>Precio:</label>
-                        <input type="text" name="Domicilio" required minlength="3">  
-                    </div></li>
-    
-                    <li><div class="correo">
-                        <label>Categoria:</label>
-                        <select name="categoria" id="">
-                            <option value="">Selecciona...</option>
-                            <option value="Ofertas">Ofertas</option>
-                            <option value="Destacados">Destacados</option>
-                        </select>
-                    </div></li>
-    
-                    <li><div class = 'tel'>
-                        <label>Tarifa:</label>
-                        <input type="text" name="Tarifa">
-                    </div></li>
-                    <li><div class="descripcion">
-                        <label>Descripcion:</label>
-                        <input type="text" name="Descripcion">
-                    </div></li>
-                </ul>
-                
-        
-            </nav>
-
-                <div class="botones">
-                <div class="boton">
-                    <button type="submit">Registrarse</button>
-                </div>
-
-                <div class="boton-borrar">
-                    <button type="reset"> Borrar</button>
-                </div>
-                </div>
-                </div>
-        </form>
-    </div>
-    </div>
-    </main> -->
-
-
     <%- include('partials/footer.ejs'); -%>
 </body>
 

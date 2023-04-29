@@ -14,4 +14,4 @@ router.post('/formCarga/create', productosController.create);
 router.post('/modifProducto/update', productosController.update);
 router.post('/deleteProducto/delete', productosController.delete);
 
-module.exports = router;
+module.exports = router;                  
