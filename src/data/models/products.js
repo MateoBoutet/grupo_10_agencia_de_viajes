@@ -25,10 +25,6 @@ const products = sequelize.define('products', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  periodo: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
   imagen: {
     type: Sequelize.STRING,
     allowNull: false
@@ -53,7 +49,6 @@ const products = sequelize.define('products', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  
   created_at: {
     type: Sequelize.DATE,
     defaultValue: Sequelize.NOW

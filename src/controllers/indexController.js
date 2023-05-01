@@ -1,4 +1,4 @@
-const products = require('../data/models/products');
+/* const products = require('../data/models/products');
 
 let indexController = {
   index: async (req, res) => {
@@ -37,11 +37,11 @@ let indexController = {
   },
 };
 
-module.exports = indexController;
+module.exports = indexController; */
 
 
 
-/* const path = require("path");
+const path = require("path");
 const fs = require("fs");
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
@@ -69,4 +69,4 @@ let indexController = {
     },
 };
 
-module.exports = indexController; */
+module.exports = indexController;

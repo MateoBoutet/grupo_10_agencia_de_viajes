@@ -65,7 +65,7 @@ form {
     background-color: var(--hooverbutton);
   }
 
-  .custom-file-input {
+  .custom-imagen {
     display: flex;
     position: relative;
     background-color: var(--logo);
@@ -79,7 +79,7 @@ form {
     width: 70%;
     outline: none;
   }
-  .custom-file-input::before {
+  .custom-imagen::before {
     content: "Elige un archivo";
     position: absolute;
     top: 0;
@@ -91,7 +91,7 @@ form {
     border-radius: 8px;
     
   }
-  .custom-file-input:hover::before {
+  .custom-imagen:hover::before {
     background-color: var(--hooverbutton);
   }
 

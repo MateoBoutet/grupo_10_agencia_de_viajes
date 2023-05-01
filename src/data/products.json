@@ -12,18 +12,6 @@
   "dias": 14
  },
  {
-  "id": 2,
-  "origen": "Buenos Aires",
-  "destino": "Mar del Plata",
-  "precio": 83123,
-  "periodo": "Octubre 2023",
-  "imagen": "imagen6.jpg",
-  "traslado": "bus semi-cama",
-  "alojamiento": "hostel",
-  "habitacion": "doble matrimonial",
-  "dias": 5
- },
- {
   "id": 4,
   "origen": "Buenos Aires",
   "destino": "Mar del Plata",
@@ -60,30 +48,6 @@
   "dias": 22
  },
  {
-  "id": 7,
-  "origen": "Buenos Aires",
-  "destino": "Cataratas del Iguazu",
-  "precio": 98702,
-  "periodo": "Mayo 2023",
-  "imagen": "imagen4.jpg",
-  "traslado": "aereo economy",
-  "alojamiento": "hostel",
-  "habitacion": "doble matrimonial",
-  "dias": 5
- },
- {
-  "id": 8,
-  "origen": "Buenos Aires",
-  "destino": "Capilla del Monte",
-  "precio": 109094,
-  "periodo": "Diciembre 2022",
-  "imagen": "imagen1.jpg",
-  "traslado": "aereo economy",
-  "alojamiento": "cabaña",
-  "habitacion": "doble twin",
-  "dias": 9
- },
- {
   "id": 9,
   "origen": "Buenos Aires",
   "destino": "Merlo San Luis",
@@ -97,74 +61,36 @@
  },
  {
   "id": 10,
-  "origen": "Buenos Aires",
-  "destino": "Mar del Plata",
-  "precio": 38152,
-  "periodo": "Julio 2023",
-  "imagen": "imagen6.jpg",
-  "traslado": "aereo economy",
-  "alojamiento": "casa",
-  "habitacion": "doble twin",
-  "dias": 26
+  "origen": "Neuquén",
+  "destino": "San Martin de los Andes",
+  "precio": 150000,
+  "periodo": "Diciembre 2023",
+  "imagen": "imagen8.jpg",
+  "traslado": "Avión",
+  "alojamiento": "Hostería y Cabañas Posada Quinén",
+  "habitacion": "Doble Matrimonial",
+  "dias": "14"
  },
  {
   "id": 11,
-  "origen": "Buenos Aires",
-  "destino": "Cerro  Siete Colores",
-  "precio": 46521,
-  "periodo": "Diciembre 2022",
-  "imagen": "imagen3.jpg",
-  "traslado": "aereo business",
-  "alojamiento": "hostel",
-  "habitacion": "doble matrimonial",
-  "dias": 12
+  "origen": "Neuquén",
+  "destino": "Barilocheeee",
+  "precio": 74,
+  "periodo": "1ra temporada",
+  "traslado": "Avión",
+  "alojamiento": "Hostería y Cabañas Posada Quinén",
+  "habitacion": "Triple",
+  "dias": "14"
  },
  {
   "id": 12,
-  "origen": "Buenos Aires",
-  "destino": "Mar del Plata",
-  "precio": 68620,
-  "periodo": "Noviembre 2023",
-  "imagen": "imagen6.jpg",
-  "traslado": "aereo business",
-  "alojamiento": "cabaña",
-  "habitacion": "doble matrimonial",
-  "dias": 8
- },
- {
-  "id": 13,
-  "origen": "Buenos Aires",
-  "destino": "Capilla del Monte",
-  "precio": 104244,
-  "periodo": "Septiembre 2023",
-  "imagen": "imagen5.jpg",
-  "traslado": "bus semi-cama",
-  "alojamiento": "departamento",
-  "habitacion": "doble twin",
-  "dias": 12
- },
- {
-  "id": 14,
-  "origen": "Buenos Aires",
-  "destino": "Merlo San Luis",
-  "precio": 90589,
-  "periodo": "Febrero 2023",
-  "imagen": "imagen7.jpg",
-  "traslado": "aereo business",
-  "alojamiento": "hotel",
-  "habitacion": "doble matrimonial",
-  "dias": 2
- },
- {
-  "id": 15,
-  "origen": "Buenos Aires",
-  "destino": "Merlo San Luis",
-  "precio": 136127,
-  "periodo": "Octubre 2023",
-  "imagen": "imagen7.jpg",
-  "traslado": "aereo economy",
-  "alojamiento": "departamento",
-  "habitacion": "doble matrimonial",
-  "dias": 2
+  "origen": "Neuquén",
+  "destino": "San Martin de los Andes",
+  "precio": 80000,
+  "periodo": "3ra temporada",
+  "traslado": "Avión",
+  "alojamiento": "Hostería y Cabañas",
+  "habitacion": "King",
+  "dias": "33"
  }
 ]
