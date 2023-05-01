@@ -22,7 +22,7 @@
             <label for="precio">Precio:</label>
             <input type="number" id="precio" name="precio" required>
 
-            <label for="periodo">Periodo:</label>
+            <label class="graf" for="periodo">Periodo:</label>
             <select id="periodo" name="periodo" required>
                 <option value="">Selecciona una opción</option>
                 <option value="1er trimestre">1er trimestre</option>
@@ -31,7 +31,7 @@
                 <option value="4to trimestre">4to trimestre</option>
                 </select>
                 
-                <label for="imagen">Imagen de Paquete</label>
+                <label class="graf" for="imagen">Imagen de Paquete</label>
                 <br>
                 <input type="file" id= "imagen" name="imagen" placeholder="Agregar imagen de paquete" class ="styleinput"
                 <%= locals.errors && errors.imagen ? "is-invalid": null %>"
@@ -42,14 +42,14 @@
                 </div>
               <% } %>
 
-            <label for="traslado">Traslado:</label>
+            <label class="graf" for="traslado">Traslado:</label>
             <select id="traslado" name="traslado" required>
                 <option value="">Selecciona una opción</option>
                 <option value="1ra clase">1ra clase</option>
                 <option value="Económico">Económico</option>
                 </select>
 
-            <label for="alojamiento">Alojamiento:</label>
+            <label class="graf" for="alojamiento">Alojamiento:</label>
             <select id="alojamiento" name="alojamiento" required>
                 <option value="">Selecciona una opción</option>
                 <option value="Hotel">Hotel</option>
@@ -57,7 +57,7 @@
                 <option value="Casa">Casa</option>
                 </select>
 
-            <label for="habitacion">Tipo de habitación:</label>
+            <label class="graf" for="habitacion">Tipo de habitación:</label>
             <select id="habitacion" name="habitacion" required>
             <option value="">Selecciona una opción</option>
             <option value="King">King</option>
@@ -68,12 +68,21 @@
             <option value="Individual">Individual</option>
             </select>
 
-            <label for="dias">Cantidad de días:</label>
+            <label class="graf" for="dias">Cantidad de días:</label>
             <select id="dias" name="dias" required>
                 <option value="">Selecciona una opción</option>
                 <option value="semana">7</option>
                 <option value="quincena">14</option>
                 <option value="mes">30</option>
+                </select>
+
+            <label class="graf" for="oferta">Porcentaje de Oferta:</label>
+            <select id="oferta" name="oferta" required>
+                <option value="">Selecciona una opción</option>
+                <option value="0">0</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
                 </select>
 
             <input type="submit" value="Enviar">

@@ -46,7 +46,7 @@ const products = sequelize.define('products', {
     allowNull: false
   },
   oferta: {
-    type: Sequelize.boolean,
+    type: Sequelize.INTEGER, // Se debe cambiar en la base de string a int
     allowNull: false
   },
   created_at: {

@@ -29,7 +29,7 @@ const validations = [
     body ('alojamiento').notEmpty().withMessage('Debes seleccionar una opción'),
     body ('habitacion').notEmpty().withMessage('Debes seleccionar una opción'),
     body ('dias').notEmpty().withMessage('Debes seleccionar una opción'),
-    body ('oferta').notEmpty().withMessage('Debes seleccionar una opción'),
+    body ('oferta').notEmpty().withMessage('Debe poner un porcentaje de descuento'),
     body ('imagen').custom ((value,{req}) => {
         let file = req.file;
         let acceptedExtensions = ['.jpg','.png'];
@@ -46,8 +46,9 @@ const validations = [
     })
 ]
 
-router.get('/', productosController.formcarga);
-router.post('/', upload.single('imagen'), validations, productosController.modifProducto);
+router.get('/', productosConroller.formCarga);
+
+router.post('/', upload.single('imagen'), validations, productosConroller.create);
 
 
 module.exports = router;
