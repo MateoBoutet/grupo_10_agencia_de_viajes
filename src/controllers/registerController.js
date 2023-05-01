@@ -27,7 +27,7 @@ const registerController = {
             lastName: req.body.lastName,
             email: req.body.email,
             // Encriptamos la contraseña antes de guardarla en la base de datos usando el método hashSync de bcrypt
-            password: bcrypt.hashSync(req.body.password, 10),
+            password: bcrypt.hashSync(req.body.password, 4),
             birthdate: req.body.birthdate,
             phone: req.body.phone,
             type: req.body.type,

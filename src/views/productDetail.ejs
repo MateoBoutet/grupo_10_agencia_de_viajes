@@ -12,8 +12,9 @@
         <main>
             <main>
                 <div class="product">
-                  <img src=<%= producto.imagen %> alt=<%= producto.imagen %> />
+                  <img src="/img/paquetes/<%= producto.imagen %>" alt=<%= producto.destino %> />
                   <h2><%= producto.destino %></h2>
+                  <h2><%= producto.periodo %></h2>
                   <h3>Precio: $<%= producto.precio %></h3>
                   <button>Agregar al carrito</button>
                 </div>
