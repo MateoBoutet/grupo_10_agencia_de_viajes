@@ -46,7 +46,7 @@ const validations = [
     })
 ]
 
-router.get('/', formCargaController.formCarga);
+router.get('/', productosConroller.show);
 router.post('/', upload.single('imagen'), validations, productosConroller.process);
 
 
