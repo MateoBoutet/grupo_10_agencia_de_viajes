@@ -27,7 +27,7 @@ const products = sequelize.define('products', {
   },
   imagen: {
     type: Sequelize.STRING,
-    allowNull: true
+    allowNull: false
   },
   traslado: {
     type: Sequelize.STRING,
@@ -65,7 +65,7 @@ sequelize.sync({ force: false })
     console.log('Conexión a DB Exitosa');
   })
   .catch((error) => {
-    console.log(`Error al sincronizar las products: ${error}`);
+    console.log(`Error al sincronizar los productos: ${error}`);
   });
 
 // Exporta el modelo Products.

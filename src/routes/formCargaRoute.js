@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 const path = require('path');
 let multer = require('multer');
-let productosConroller = require ('../controllers/productosConroller.js');
+let productosConroller = require ('../controllers/productosController.js');
 
 let multerDiskStorage = multer.diskStorage({
     destination: (req,file,callback) => {
@@ -46,8 +46,8 @@ const validations = [
     })
 ]
 
-router.get('/', productosConroller.show);
-router.post('/', upload.single('imagen'), validations, productosConroller.process);
+router.get('/', productosController.formcarga);
+router.post('/', upload.single('imagen'), validations, productosController.modifProducto);
 
 
 module.exports = router;
