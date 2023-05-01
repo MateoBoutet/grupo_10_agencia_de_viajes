@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 const sequelize = require('../database');
 
-// Define el modelo User que representa la tabla users en la base de datos.
+// Define el modelo products que representa la tabla products en la base de datos.
 const products = sequelize.define('products', {
   id: {
     type: Sequelize.INTEGER,
@@ -27,7 +27,7 @@ const products = sequelize.define('products', {
   },
   imagen: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: true
   },
   traslado: {
     type: Sequelize.STRING,
@@ -59,7 +59,7 @@ const products = sequelize.define('products', {
   }
 });
 
-// Sincroniza el modelo User con la base de datos.
+// Sincroniza el modelo Producs con la base de datos.
 sequelize.sync({ force: false })
   .then(() => {
     console.log('Conexión a DB Exitosa');
@@ -68,5 +68,5 @@ sequelize.sync({ force: false })
     console.log(`Error al sincronizar las products: ${error}`);
   });
 
-// Exporta el modelo User.
+// Exporta el modelo Products.
 module.exports = products;

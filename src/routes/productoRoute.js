@@ -2,6 +2,7 @@ let express = require('express');
 let router = express.Router();
 let productosController = require('../controllers/productosConroller');
 
+
 router.get('/', productosController.productos);
 router.get('/search', productosController.search);
 

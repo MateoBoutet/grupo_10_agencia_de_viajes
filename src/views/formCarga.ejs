@@ -23,16 +23,39 @@
             <input type="number" id="precio" name="precio" required>
 
             <label for="periodo">Periodo:</label>
-            <input type="text" id="periodo" name="periodo" required>
-
-            <label for="imagen" class="custom-imagen">Elige un archivo</label>
-            <input type="file" id="imagen" class="imagen" required>
+            <select id="periodo" name="periodo" required>
+                <option value="">Selecciona una opción</option>
+                <option value="1er trimestre">1er trimestre</option>
+                <option value="2do trimestre">2do trimestre</option>
+                <option value="3er trimestre">3er trimestre</option>
+                <option value="4to trimestre">4to trimestre</option>
+                </select>
+                
+                <label for="imagen">Imagen de Paquete</label>
+                <br>
+                <input type="file" id= "imagen" name="imagen" placeholder="Agregar imagen de paquete" class ="styleinput"
+                <%= locals.errors && errors.imagen ? "is-invalid": null %>"
+                > 
+                <% if (locals.errors && errors.imagen) { %>
+                <div class = "text-danger">
+                  <%= errors.imagen.msg %>
+                </div>
+              <% } %>
 
             <label for="traslado">Traslado:</label>
-            <input type="text" id="traslado" name="traslado" required>
+            <select id="traslado" name="traslado" required>
+                <option value="">Selecciona una opción</option>
+                <option value="1ra clase">1ra clase</option>
+                <option value="Económico">Económico</option>
+                </select>
 
             <label for="alojamiento">Alojamiento:</label>
-            <input type="text" id="alojamiento" name="alojamiento" required>
+            <select id="alojamiento" name="alojamiento" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Cabaña">Cabaña</option>
+                <option value="Casa">Casa</option>
+                </select>
 
             <label for="habitacion">Tipo de habitación:</label>
             <select id="habitacion" name="habitacion" required>
@@ -46,7 +69,12 @@
             </select>
 
             <label for="dias">Cantidad de días:</label>
-            <input type="text" id="dias" name="dias" required>
+            <select id="dias" name="dias" required>
+                <option value="">Selecciona una opción</option>
+                <option value="semana">7</option>
+                <option value="quincena">14</option>
+                <option value="mes">30</option>
+                </select>
 
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
