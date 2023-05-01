@@ -69,7 +69,8 @@
         <section class="ofertas">
           <% paquetes.forEach(producto => { %> 
             <article class="producto">
-              <img src="/img/capilla.jpg" alt="Capilla del monte" class="imagenes"/>
+            <a href="/paquetes/detail/<%= producto.id %>">
+            <img src="/img/paquetes/<%= producto.imagen%>" alt="<%= producto.destino %>" class="imagenes"/>
               <section class="articulo">
                 <i class="fa-solid fa-plane-departure"></i>
                 <div class="nombres-precios">
