@@ -34,4 +34,4 @@ app.use("/userProfile", rutasUserProfile);
 app.use("/productCart", rutasProductCart);
 /* app.use('/productDetail', rutasProductDetail); */
 app.use("/session", rutasSession);
-app.use("/paquetes", rutaProducto);
+app.use("/paquetes", rutaProducto);//<---------

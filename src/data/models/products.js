@@ -46,7 +46,7 @@ const products = sequelize.define('products', {
     allowNull: false
   },
   oferta: {
-    type: Sequelize.STRING,
+    type: Sequelize.boolean,
     allowNull: false
   },
   created_at: {

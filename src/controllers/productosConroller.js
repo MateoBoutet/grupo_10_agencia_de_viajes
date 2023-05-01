@@ -46,7 +46,7 @@ let productosController = {
         };
 
         if (req.file) {
-            newProduct.image = req.file.filename;
+            newProduct.imagen = req.file.filename;
         }
 
         products.push(newProduct);
@@ -67,7 +67,7 @@ let productosController = {
 
         findProduct.destino = req.body.destino;
         findProduct.precio = Number(req.body.precio);
-        findProduct.image = req.file.filename;
+        findProduct.imagen = req.file.filename;//<---VER
 
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
         res.redirect("/");

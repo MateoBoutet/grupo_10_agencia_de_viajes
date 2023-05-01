@@ -69,6 +69,15 @@ a{
         align-items:center;
     }
 
+    .img_perfil {
+        border-radius: 100%;
+        height: 5rem;
+        width: 5rem;
+        object-fit: cover;
+        flex-direction: row-reverse;
+      }
+      
+
     .copyright {
         font-size: 0.6em;
         text-align: center;

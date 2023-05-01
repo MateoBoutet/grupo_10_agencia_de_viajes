@@ -60,29 +60,6 @@
   "dias": 15
  },
  {
-  "id": 10,
-  "origen": "Neuquén",
-  "destino": "San Martin de los Andes",
-  "precio": 150000,
-  "periodo": "Diciembre 2023",
-  "imagen": "imagen8.jpg",
-  "traslado": "Avión",
-  "alojamiento": "Hostería y Cabañas Posada Quinén",
-  "habitacion": "Doble Matrimonial",
-  "dias": "14"
- },
- {
-  "id": 11,
-  "origen": "Neuquén",
-  "destino": "Barilocheeee",
-  "precio": 74,
-  "periodo": "1ra temporada",
-  "traslado": "Avión",
-  "alojamiento": "Hostería y Cabañas Posada Quinén",
-  "habitacion": "Triple",
-  "dias": "14"
- },
- {
   "id": 12,
   "origen": "Neuquén",
   "destino": "San Martin de los Andes",
@@ -92,5 +69,17 @@
   "alojamiento": "Hostería y Cabañas",
   "habitacion": "King",
   "dias": "33"
+ },
+ {
+  "id": 13,
+  "origen": "CANADA",
+  "destino": "PRUEBA",
+  "precio": 200000,
+  "periodo": "2do trimestre",
+  "imagen": "Laburo.jpeg",
+  "traslado": "Económico",
+  "alojamiento": "Cabaña",
+  "habitacion": "Queen",
+  "dias": "quincena"
  }
 ]

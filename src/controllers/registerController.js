@@ -35,6 +35,7 @@ const registerController = {
           })
       // Si se crea el usuario exitosamente, redirigimos al usuario a la página de inicio de sesión
       .then(function() {
+        console.log('Registro de usuario nuevo exitoso');
         return res.redirect('/login');
       })
       // Si ocurre un error al crear el usuario, lo mostramos en la consola
