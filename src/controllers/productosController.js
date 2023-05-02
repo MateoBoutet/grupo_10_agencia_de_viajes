@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-/* const products = require('../data/models/products'); //Sebas labura con este*/
+/* const products = require('../data/models/products'); //Sebas labura con este */
 
 const productsFilePath = path.join(__dirname, "../data/products.json");
 var products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
@@ -41,17 +41,17 @@ let productosController = {
     },
 
     create: (req, res) => {
-        let newProduct = {
-            id: products[products.length - 1].id + 1,
+        let newProduct = ({
+           id: products[products.length - 1].id + 1,
             ...req.body,
             precio: Number(req.body.precio),
-        };
+        });
 
         if (req.file) {
             newProduct.imagen = req.file.filename;
         }
 
-        products.push(newProduct);
+        products.push(newProduct),
 
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
         res.redirect("/");

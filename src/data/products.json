@@ -101,5 +101,57 @@
   "habitacion": "Queen",
   "dias": "quincena",
   "oferta": "10"
+ },
+ {
+  "id": 15,
+  "origen": "Capital Federal",
+  "destino": "San Juan",
+  "precio": 123456,
+  "periodo": "2do trimestre",
+  "imagen": "San-juan.jpg",
+  "traslado": "1ra clase",
+  "alojamiento": "Cabaña",
+  "habitacion": "Queen",
+  "dias": "quincena",
+  "oferta": "30"
+ },
+ {
+  "id": 16,
+  "origen": "Capital Federal",
+  "destino": "San Juan",
+  "precio": 123567,
+  "periodo": "3er trimestre",
+  "imagen": "San-juan.jpg",
+  "traslado": "1ra clase",
+  "alojamiento": "Hotel",
+  "habitacion": "King",
+  "dias": "mes",
+  "oferta": "30"
+ },
+ {
+  "id": 17,
+  "origen": "Capital Federal",
+  "destino": "San Juan",
+  "precio": 456789,
+  "periodo": "2do trimestre",
+  "imagen": "San-juan.jpg",
+  "traslado": "Económico",
+  "alojamiento": "Hotel",
+  "habitacion": "Triple",
+  "dias": "quincena",
+  "oferta": "10"
+ },
+ {
+  "id": 18,
+  "origen": "Capital Federal",
+  "destino": "San Juan",
+  "precio": 123567,
+  "periodo": "2do trimestre",
+  "imagen": "San-juan.jpg",
+  "traslado": "Económico",
+  "alojamiento": "Cabaña",
+  "habitacion": "Triple",
+  "dias": "quincena",
+  "oferta": "10"
  }
 ]
