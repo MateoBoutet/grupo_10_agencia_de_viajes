@@ -19,7 +19,9 @@
             <div class="styledate">
                 <label for="name">Nombre</label>
                 <br>
-                <input class="styleinput" type='text' name="name" id="name" placeholder="Indique su nombre" maxlength="40" mb-form-field-input="" value="<%= locals.oldData ? oldData.name:null %>" > 
+                <input class="styleinput" type='text' name="name" id="name" 
+                placeholder="Indique su nombre" maxlength="40" mb-form-field-input="" 
+                value="<%= locals.oldData ? oldData.name:null %>" > 
                   <% if (locals.errors && errors.name){%>
                       <div class="text-danger">
                          <%= errors.name.msg %>

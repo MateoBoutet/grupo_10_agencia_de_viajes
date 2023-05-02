@@ -46,8 +46,9 @@ const products = sequelize.define('products', {
     allowNull: false
   },
   oferta: {
-    type: Sequelize.boolean,
-    allowNull: false
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    defaultValue: true
   },
   created_at: {
     type: Sequelize.DATE,
@@ -62,7 +63,7 @@ const products = sequelize.define('products', {
 // Sincroniza el modelo Producs con la base de datos.
 sequelize.sync({ force: false })
   .then(() => {
-    console.log('Conexión a DB Exitosa');
+    console.log('Conexión a tabla product OK');
   })
   .catch((error) => {
     console.log(`Error al sincronizar las products: ${error}`);

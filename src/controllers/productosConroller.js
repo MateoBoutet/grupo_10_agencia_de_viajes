@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+/* const products = require('../data/models/products'); //Sebas labura con este*/
+
 const productsFilePath = path.join(__dirname, "../data/products.json");
 var products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
@@ -97,7 +99,8 @@ let productosController = {
             return producto.id == id;
         });
 
-        res.render(path.resolve(__dirname, "../views/productDetail.ejs"), { producto: productoFiltrado });
+        res.render(path.resolve(__dirname, "../views/productDetail.ejs"), 
+        { producto: productoFiltrado });
     },
 };
 

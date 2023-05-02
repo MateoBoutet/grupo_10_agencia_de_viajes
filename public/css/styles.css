@@ -70,13 +70,12 @@ a{
     }
 
     .img_perfil {
-        border-radius: 100%;
+        border-radius: 50%;
         height: 5rem;
         width: 5rem;
         object-fit: cover;
-        flex-direction: row-reverse;
+        margin-left: auto;
       }
-      
 
     .copyright {
         font-size: 0.6em;

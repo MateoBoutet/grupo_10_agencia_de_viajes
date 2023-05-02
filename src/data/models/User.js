@@ -55,7 +55,7 @@ const User = sequelize.define('users', {
 // Sincroniza el modelo User con la base de datos.
 sequelize.sync({ force: false })
   .then(() => {
-    console.log('Conexión a DB Exitosa');
+    console.log('Conexión a tabla users OK');
   })
   .catch((error) => {
     console.log(`Error al sincronizar las tablas: ${error}`);
