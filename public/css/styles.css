@@ -51,11 +51,6 @@ a{
     margin-left:auto;
 }
 
-a{
-    text-decoration: none;
-    color: var(--blanco);
-}
-
 
 .footer-logos-container{
     justify-content: space-between;
@@ -63,10 +58,14 @@ a{
     margin-left: 2rem;
     margin-right: 2rem;
     }
+    .navbar-collapse{
+        width: 100%;
+    }
 
     .nav-item {
         display: flex;
         align-items:center;
+        padding: 0px 20px 0px 20px;
     }
 
     .img_perfil {
@@ -74,7 +73,6 @@ a{
         height: 5rem;
         width: 5rem;
         object-fit: cover;
-        margin-left: auto;
       }
 
     .copyright {
@@ -108,5 +106,6 @@ a{
     .navbar{
         background: linear-gradient(to left, #37506C, rgb(32, 15, 58))
     }
+    
 
 

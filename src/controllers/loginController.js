@@ -4,9 +4,6 @@ const { validationResult } = require("express-validator");
 const User = require("../data/models/User");
 const bcryptjs = require("bcryptjs");
 
-const usersFilePath = path.join(__dirname, "../data/users.json");
-const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
-
 let loginController = {
     login: (req, res) => {
         if (req.session.userLogged) {
@@ -16,7 +13,7 @@ let loginController = {
         res.render(path.resolve(__dirname, "./../views/login.ejs"));
     },
 
-    procesoLogin: (req, res) => {
+    procesoLogin: async (req, res) => {
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
@@ -26,18 +23,20 @@ let loginController = {
             });
         }
 
-        let userToLogin = users.find((user) => user.email == req.body.email);
-        if (userToLogin) {
-            let passwordOk = bcryptjs.compareSync(
-                req.body.password,
-                userToLogin.password
-            );
+        try {
+            const userToLogin = await User.findOne({ where: { email: req.body.email } });
 
-            if (passwordOk) {
-                delete userToLogin.password;
-                req.session.userLogged = userToLogin;
-                return res.redirect("/userProfile");
+            if (userToLogin) {
+                const passwordOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
+
+                if (passwordOk) {
+                    delete userToLogin.password;
+                    req.session.userLogged = userToLogin;
+                    return res.redirect("/userProfile");
+                }
             }
+        } catch (error) {
+            console.log(error);
         }
 
         return res.render(path.resolve(__dirname, "./../views/login.ejs"), {
@@ -51,3 +50,4 @@ let loginController = {
 };
 
 module.exports = loginController;
+
