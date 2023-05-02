@@ -21,6 +21,14 @@ const carrito = sequelize.define('carrito', {
     type: Sequelize.TINYINT(0),
     allowNull: false,
     defaultValue: true
+  },
+  createdat: {
+    type: Sequelize.DATE,
+    defaultValue: Sequelize.NOW
+  },
+  updatedat: {
+    type: Sequelize.DATE,
+    defaultValue: Sequelize.NOW
   }
 });
 
