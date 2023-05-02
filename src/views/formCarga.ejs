@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +24,7 @@
             <input type="number" id="precio" name="precio" required>
 
             <label class="graf" for="periodo">Periodo:</label>
-            <select id="periodo" name="periodo" required>
+            <select class="grafopt" id="periodo" name="periodo" required>
                 <option value="">Selecciona una opción</option>
                 <option value="1er trimestre">1er trimestre</option>
                 <option value="2do trimestre">2do trimestre</option>
@@ -33,7 +34,7 @@
                 
                 <label class="graf" for="imagen">Imagen de Paquete</label>
                 <br>
-                <input type="file" id= "imagen" name="imagen" placeholder="Agregar imagen de paquete" class ="styleinput"
+                <input class="grafopt" type="file" id= "imagen" name="imagen" placeholder="Agregar imagen de paquete" class ="styleinput"
                 <%= locals.errors && errors.imagen ? "is-invalid": null %>"
                 > 
                 <% if (locals.errors && errors.imagen) { %>
@@ -43,14 +44,14 @@
               <% } %>
 
             <label class="graf" for="traslado">Traslado:</label>
-            <select id="traslado" name="traslado" required>
+            <select class="grafopt" id="traslado" name="traslado" required>
                 <option value="">Selecciona una opción</option>
                 <option value="1ra clase">1ra clase</option>
                 <option value="Económico">Económico</option>
                 </select>
 
             <label class="graf" for="alojamiento">Alojamiento:</label>
-            <select id="alojamiento" name="alojamiento" required>
+            <select class="grafopt" id="alojamiento" name="alojamiento" required>
                 <option value="">Selecciona una opción</option>
                 <option value="Hotel">Hotel</option>
                 <option value="Cabaña">Cabaña</option>
@@ -58,7 +59,7 @@
                 </select>
 
             <label class="graf" for="habitacion">Tipo de habitación:</label>
-            <select id="habitacion" name="habitacion" required>
+            <select class="grafopt" id="habitacion" name="habitacion" required>
             <option value="">Selecciona una opción</option>
             <option value="King">King</option>
             <option value="Queen">Queen</option>
@@ -69,7 +70,7 @@
             </select>
 
             <label class="graf" for="dias">Cantidad de días:</label>
-            <select id="dias" name="dias" required>
+            <select class="grafopt" id="dias" name="dias" required>
                 <option value="">Selecciona una opción</option>
                 <option value="semana">7</option>
                 <option value="quincena">14</option>
@@ -77,7 +78,7 @@
                 </select>
 
             <label class="graf" for="oferta">Porcentaje de Oferta:</label>
-            <select id="oferta" name="oferta" required>
+            <select class="grafopt" id="oferta" name="oferta" required>
                 <option value="">Selecciona una opción</option>
                 <option value="0">0</option>
                 <option value="10">10</option>

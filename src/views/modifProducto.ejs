@@ -32,8 +32,14 @@
 
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Borrar">
-                        <button action="/paquetes/deleteProducto/delete" method="post" type="text" id="id" class="borrardato">Eliminar</button>
-            </div>
+                        <form action="/paquetes/deleteProducto/delete" method="post">
+                        <button type="text" name= "id" id="id" class="borrardato">Eliminar</button>
+<!--                         <form action="/paquetes/deleteProducto/delete" method="post">
+                            <input type="hidden" name="id" value="<%= producto.id %>">
+                            <button type="submit" class="borrardato">Eliminar</button>
+                          </form>    --> 
+                        </form>
+                    </div>  
         </form>
 
         <%- include('partials/footer.ejs'); -%>

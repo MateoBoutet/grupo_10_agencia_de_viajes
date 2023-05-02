@@ -26,6 +26,14 @@ form {
     font-weight: bold;
     margin-bottom: 5px;
   }
+
+  .grafopt{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    outline: none;
+  }
   
   input[type="text"], textarea {
     width: 90%;
