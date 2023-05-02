@@ -65,41 +65,16 @@
   "oferta": 0
  },
  {
-  "id": 12,
+  "id": 15,
   "origen": "Neuquén",
   "destino": "San Martin de los Andes",
-  "precio": 80000,
-  "periodo": "3ra temporada",
-  "traslado": "Avión",
-  "alojamiento": "Hostería y Cabañas",
-  "habitacion": "King",
-  "dias": "33",
-  "oferta": 0
- },
- {
-  "id": 13,
-  "origen": "CANADA",
-  "destino": "PRUEBA",
-  "precio": 200000,
+  "precio": 500000,
   "periodo": "2do trimestre",
-  "imagen": "Laburo.jpeg",
-  "traslado": "Económico",
+  "imagen": "imagen8.jpg",
+  "traslado": "1ra clase",
   "alojamiento": "Cabaña",
-  "habitacion": "Queen",
+  "habitacion": "Doble",
   "dias": "quincena",
-  "oferta": 0
- },
- {
-  "id": 14,
-  "origen": "Capital Federal",
-  "destino": "San Juan",
-  "precio": 230000,
-  "periodo": "3er trimestre",
-  "imagen": "San-juan.jpg",
-  "traslado": "Económico",
-  "alojamiento": "Hotel",
-  "habitacion": "Queen",
-  "dias": "quincena",
-  "oferta": "10"
+  "oferta": "20"
  }
 ]
