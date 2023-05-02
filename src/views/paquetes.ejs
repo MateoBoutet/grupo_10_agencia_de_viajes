@@ -25,8 +25,9 @@
       <section class="destacados">
         <% servicios.forEach(servicio=> { %>
           <article class="producto">
-            <img src="/img/villa-carlos-paz.jpg" alt="Villa Carlos Paz" class="imagenes" />
-            <section class="articulo">
+            <a href="/paquetes/detail/<%= servicio.id %>">
+              <img src="/img/paquetes/<%= servicio.imagen%>" alt="<%= servicio.destino %>" class="imagenes"/>
+             <section class="articulo">
               <i class="fa-solid fa-plane-departure"></i>
               <div class="nombres-precios">
                 <h3 class="nombres"><%= servicio.destino %></h3>
@@ -40,7 +41,8 @@
                 <div id="myModal" class="modal">
                   <div class="modal-content">
                     <span class="close"></span>
-                    <img src="/img/villa-carlos-paz.jpg" alt="Imagen del producto" />
+                    <a href="/paquetes/detail/<%= servicio.id %>">
+                      <img src="/img/paquetes/<%= servicio.imagen%>" alt="<%= servicio.destino %>" class="imagenes"/>
                     <p>detalle capilla</p>
                     <div class="desde-hasta">
                       <div class="desde">

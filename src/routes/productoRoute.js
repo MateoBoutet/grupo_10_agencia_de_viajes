@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-let productosController = require('../controllers/productosConroller');
+let productosController = require('../controllers/productosController');
 
 
 router.get('/', productosController.productos);
